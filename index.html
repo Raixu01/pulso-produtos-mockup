@@ -1,20 +1,3810 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#73c7d4"><title>PULSO — Ideias que movimentam Altamira</title><style>
-:root{--ink:#173b39;--cream:#fff8e7;--sky:#73c7d4;--river:#43a9cf;--grass:#9bd36a;--orange:#ff7048;--yellow:#ffd45c;--pink:#ef6f8f;--purple:#7f72d8;--blue:#3c92ca;--brown:#b87845}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--sky);font-family:"Trebuchet MS","Segoe UI",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 34px));margin:auto}.nav{position:fixed;z-index:50;left:50%;top:18px;transform:translateX(-50%);width:min(1100px,calc(100% - 30px));height:66px;padding:0 10px 0 19px;border:3px solid var(--ink);border-radius:24px;background:#fff8e7ee;box-shadow:0 7px 0 #173b392e;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(10px)}.brand{display:flex;align-items:center;gap:10px;font-weight:1000;letter-spacing:.12em}.pulse{width:39px;height:39px;background:var(--orange);border:3px solid var(--ink);border-radius:50%;position:relative}.pulse:before{content:"";position:absolute;width:13px;height:13px;border:3px solid var(--cream);border-radius:50%;left:8px;top:8px}.pulse:after{content:"";position:absolute;width:6px;height:6px;background:var(--yellow);border-radius:50%;left:13px;top:13px}.links{display:flex;align-items:center;gap:8px}.links a{font-size:13px;font-weight:900;padding:10px 13px;border-radius:13px}.links a:hover{background:var(--yellow)}.links .talk{background:var(--ink);color:white;padding:12px 18px}.menu{display:none;border:0;background:transparent;font-size:25px;font-weight:bold}
-.hero{min-height:790px;position:relative;overflow:hidden;background:linear-gradient(#69c7d5 0 62%,#8bd064 62%);padding-top:125px}.cloud{position:absolute;background:#eafdff;border:3px solid var(--ink);border-radius:50%;animation:drift 18s linear infinite}.cloud:before,.cloud:after{content:"";position:absolute;background:inherit;border:inherit;border-radius:50%}.c1{width:90px;height:35px;top:130px;left:7%}.c1:before{width:43px;height:43px;left:11px;bottom:5px}.c1:after{width:50px;height:50px;right:8px;bottom:3px}.c2{width:75px;height:28px;top:210px;right:8%;animation-duration:24s}.c2:before{width:38px;height:38px;left:8px;bottom:4px}.c2:after{width:41px;height:41px;right:7px;bottom:3px}@keyframes drift{50%{transform:translateX(30px)}}.sun{position:absolute;width:100px;height:100px;border:4px solid var(--ink);border-radius:50%;background:var(--yellow);right:15%;top:115px;box-shadow:0 0 0 13px #ffd45c40}.hero-copy{position:relative;z-index:5;text-align:center;max-width:920px;margin:auto}.kicker{display:inline-block;background:var(--yellow);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);border-radius:999px;padding:8px 15px;font-size:12px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase;transform:rotate(-2deg)}h1{font-size:clamp(55px,8vw,108px);line-height:.84;letter-spacing:-.07em;margin:28px 0 22px;font-weight:1000;text-shadow:4px 4px 0 #ffffff73}h1 span{color:var(--cream);-webkit-text-stroke:3px var(--ink);text-shadow:5px 5px 0 var(--orange)}.hero-copy p{font-size:20px;line-height:1.45;max-width:660px;margin:0 auto;font-weight:700}.hero-actions{display:flex;justify-content:center;gap:13px;margin-top:30px}.button{display:inline-flex;gap:9px;align-items:center;justify-content:center;border:3px solid var(--ink);background:var(--orange);color:white;padding:14px 21px;border-radius:16px;font-weight:1000;box-shadow:5px 5px 0 var(--ink);transition:.18s}.button:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}.button.light{background:var(--cream);color:var(--ink)}.hero-town{position:absolute;z-index:2;bottom:-18px;left:0;width:100%;height:260px}.hill{position:absolute;bottom:0;border:3px solid var(--ink);background:#78be5a;border-radius:50% 50% 0 0}.hill.a{width:500px;height:155px;left:-80px}.hill.b{width:650px;height:190px;right:-120px;background:#86ca61}.house{position:absolute;bottom:40px;width:62px;height:56px;background:var(--cream);border:3px solid var(--ink)}.house:before{content:"";position:absolute;border-left:38px solid transparent;border-right:38px solid transparent;border-bottom:36px solid var(--orange);left:-10px;top:-37px;filter:drop-shadow(0 -3px 0 var(--ink))}.house:after{content:"";position:absolute;width:16px;height:25px;bottom:0;left:21px;background:var(--brown);border:3px solid var(--ink);border-bottom:0}.house.ha{left:13%;bottom:33px}.house.hb{left:28%;bottom:17px;transform:scale(.78)}.house.hc{right:22%;bottom:23px;transform:scale(1.15)}.tree{position:absolute;bottom:30px;width:23px;height:58px;background:var(--brown);border:3px solid var(--ink);border-radius:7px}.tree:before{content:"";position:absolute;width:68px;height:68px;background:#3f9558;border:3px solid var(--ink);border-radius:50%;left:-25px;top:-45px}.tree.t1{left:5%}.tree.t2{right:6%;transform:scale(.8)}.tree.t3{right:37%;bottom:20px;transform:scale(.65)}
-.world{position:relative;min-height:1780px;background:var(--grass);overflow:hidden;border-top:4px solid var(--ink)}.world:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#173b392e 1.3px,transparent 1.3px);background-size:24px 24px;opacity:.4}.map-svg{position:absolute;inset:0;width:100%;height:100%;z-index:1}.map-title{position:relative;z-index:5;text-align:center;padding-top:82px}.map-title h2,.games h2{font-size:clamp(45px,6vw,78px);letter-spacing:-.055em;line-height:.95;margin:17px 0 10px}.map-title p{font-weight:700;margin:0 auto;max-width:570px;font-size:17px}.product-ball{--accent:var(--orange);position:absolute;z-index:5;width:360px;height:360px;border:4px solid var(--ink);border-radius:50%;background:var(--cream);padding:51px 44px 42px;box-shadow:12px 14px 0 #173b3933;display:flex;flex-direction:column;justify-content:center;transition:.25s}.product-ball:hover{transform:translateY(-8px) rotate(1deg);box-shadow:15px 21px 0 #173b392e}.product-ball:before{content:"";position:absolute;width:55px;height:55px;border:3px solid var(--ink);border-radius:50%;background:var(--accent);right:20px;top:26px}.product-ball:after{content:"↗";position:absolute;right:37px;top:38px;color:white;font-size:24px;font-weight:1000}.product-ball .category{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:1000}.product-ball h3{font-size:35px;line-height:.95;letter-spacing:-.04em;margin:11px 0}.product-ball p{font-size:13.5px;line-height:1.42;margin:0;font-weight:650}.mini-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}.mini-tags span{padding:5px 8px;border:2px solid var(--ink);border-radius:999px;background:white;font-size:9px;font-weight:900}.edu{left:max(4%,calc(50% - 550px));top:280px;--accent:var(--purple);transform:rotate(-3deg)}.health{right:max(3%,calc(50% - 560px));top:500px;--accent:var(--pink);width:390px;height:390px;transform:rotate(3deg)}.community{left:max(8%,calc(50% - 490px));top:840px;--accent:var(--orange);width:330px;height:330px;transform:rotate(2deg)}.tourism{right:max(7%,calc(50% - 505px));top:1050px;--accent:var(--blue);width:350px;height:350px;transform:rotate(-3deg)}.food{left:50%;top:1350px;--accent:#649b3c;width:370px;height:370px;transform:translateX(-50%) rotate(2deg)}.food:hover{transform:translateX(-50%) translateY(-8px) rotate(-1deg)}.map-label{position:absolute;z-index:3;background:var(--yellow);border:3px solid var(--ink);border-radius:10px;padding:7px 11px;font-size:10px;font-weight:1000;text-transform:uppercase;box-shadow:3px 3px 0 var(--ink)}.l-rio{top:720px;left:48%;transform:rotate(-22deg)}.l-centro{top:880px;right:12%;transform:rotate(3deg)}.l-roca{bottom:150px;left:16%;transform:rotate(-4deg)}
-.games{position:relative;background:#342f58;color:white;padding:105px 0;overflow:hidden;border-top:4px solid var(--ink)}.games:before{content:"";position:absolute;inset:0;background-image:linear-gradient(30deg,#ffffff0a 12%,transparent 12.5%,transparent 87%,#ffffff0a 87.5%),linear-gradient(150deg,#ffffff0a 12%,transparent 12.5%,transparent 87%,#ffffff0a 87.5%);background-size:70px 122px}.games-head{position:relative;display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:45px}.games-head p{max-width:420px;color:#d6d1f1;font-weight:650}.game-card{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;min-height:500px;border:4px solid #18152c;border-radius:32px;background:#f3edff;color:var(--ink);overflow:hidden;box-shadow:14px 15px 0 #18152c}.game-copy{padding:55px;display:flex;flex-direction:column;justify-content:center}.status{display:inline-flex;align-items:center;gap:8px;width:max-content;border:2px solid var(--ink);border-radius:999px;padding:6px 10px;background:#d9f39e;text-transform:uppercase;font-size:10px;letter-spacing:.1em;font-weight:1000}.status i{width:8px;height:8px;border-radius:50%;background:#56a43c}.game-copy h3{font-size:52px;letter-spacing:-.05em;line-height:.95;margin:20px 0 14px}.game-copy p{font-weight:650;color:#5f5a71;margin:0 0 26px}.game-art{position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#8172e4,#4d3eac);overflow:hidden}.game-art:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#ffffff17}.hex-board{position:relative;width:330px;height:330px;transform:rotate(-8deg)}.hex{--c:#ffca43;position:absolute;width:94px;height:82px;background:var(--c);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);filter:drop-shadow(0 8px 0 #1f184961)}.hex:after{content:"";position:absolute;width:45px;height:39px;clip-path:inherit;background:#ffffff2e;left:25px;top:20px}.x1{left:25px;top:34px;--c:#ff6e68}.x2{left:119px;top:34px;--c:#ffca43}.x3{left:72px;top:116px;--c:#62d0a3}.x4{left:166px;top:116px;--c:#63b9ef}.x5{left:119px;top:198px;--c:#ef75bc}.x6{left:213px;top:34px;--c:#7ee073}.game-note{margin-top:35px;text-align:center;color:#aaa3d4;font-weight:700}.game-note span{color:var(--yellow)}.contact{background:var(--yellow);border-top:4px solid var(--ink);padding:85px 0}.contact-box{text-align:center}.contact h2{font-size:clamp(38px,6vw,72px);line-height:.94;letter-spacing:-.055em;max-width:850px;margin:0 auto 28px}.contact p{font-weight:700;margin-bottom:25px}footer{background:var(--ink);color:white;padding:34px 0}.foot{display:flex;justify-content:space-between;align-items:center}.foot small{color:#a7c4bf}.foot .pulse{border-color:white}
-@media(max-width:800px){.links{display:none;position:absolute;left:0;right:0;top:75px;background:var(--cream);border:3px solid var(--ink);border-radius:20px;padding:12px;flex-direction:column;box-shadow:6px 6px 0 var(--ink)}.links.open{display:flex}.links a{width:100%;text-align:center}.menu{display:block}.hero{min-height:740px}.sun{right:-25px}.world{min-height:auto;padding-bottom:70px}.map-svg,.map-label{display:none}.map-title{padding:70px 20px 35px}.product-ball,.edu,.health,.community,.tourism,.food{position:relative;inset:auto;transform:none!important;margin:18px auto;width:min(390px,calc(100% - 30px));height:auto;min-height:330px;border-radius:42px;padding:46px 35px}.product-ball:hover{transform:translateY(-5px)!important}.games-head{display:block}.game-card{grid-template-columns:1fr}.game-art{min-height:390px}.game-copy{padding:38px}.foot{gap:22px;align-items:flex-start}}@media(max-width:480px){.hero-copy{padding:0 15px}h1{font-size:58px}h1 span{-webkit-text-stroke:2px var(--ink)}.hero-copy p{font-size:16px}.hero-actions{flex-direction:column;align-items:center}.hero-town{height:190px}.house.hb{display:none}.product-ball h3{font-size:31px}.games{padding:70px 0}.games h2{font-size:49px}.game-copy h3{font-size:42px}.hex-board{transform:scale(.82) rotate(-8deg)}.foot{flex-direction:column}}
-/* cenário urbano simplificado: rio, vias e poucos marcos da cidade */
-.hero-logo{display:block;width:min(620px,92vw);height:150px;margin:12px auto 6px;background:var(--sky) url("pulso.png_20260922115227.jpeg") center/620px auto no-repeat;background-blend-mode:multiply}.hero-copy h1{font-size:clamp(43px,6vw,76px);line-height:.94;max-width:850px;margin:16px auto 0;letter-spacing:-.055em}.world:before{background-image:none}.map-svg{display:none}.altamira-map{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.42}.altamira-map path[fill="url(#blocks)"],.altamira-map g[fill="#ef855e"],.water-line,.map-car,.map-boat,.map-tree{display:none}.xingu-water,.draw-road,.draw-creek,.urban-block{animation:none}.altamira-map text{opacity:.65}.map-title{padding-top:92px}.map-title h2{margin-top:20px}.contact h2{margin-bottom:28px}@media(max-width:800px){.hero-logo{width:min(560px,100vw);height:135px;margin:22px auto 4px;background-size:560px auto}.altamira-map{opacity:.28}.urban-detail{display:none}.hero-copy h1{font-size:clamp(42px,11vw,62px)}}@media(prefers-reduced-motion:reduce){.altamira-map *{animation:none!important}}
-.brand-logo{display:block;width:150px;height:44px;background:#fff8e7 url("pulso.png_20260922115227.jpeg") center/245px auto no-repeat;background-blend-mode:multiply}.hero-copy{padding-top:90px}.sparkles{display:flex;justify-content:center;align-items:center;gap:9px;margin-top:25px;color:var(--yellow);-webkit-text-stroke:2px var(--ink);filter:drop-shadow(3px 3px 0 var(--orange))}.sparkles span{display:block;line-height:1}.sparkles span:nth-child(1){font-size:30px;transform:rotate(-13deg) translateY(5px)}.sparkles span:nth-child(2){font-size:48px;transform:rotate(8deg) translateY(-5px)}.sparkles span:nth-child(3){font-size:25px;transform:rotate(18deg) translateY(8px)}.games .wrap{display:flex;flex-direction:column;align-items:center}.games-head{width:100%}.game-card{width:min(760px,92vw);height:min(760px,92vw);min-height:0;border-radius:50%;grid-template-columns:1fr 1fr}.game-copy{padding:75px 42px 75px 85px}.game-art{border-radius:0 100% 100% 0}.game-note{width:100%}@media(max-width:800px){.hero-copy{padding-top:110px}.game-card{width:min(540px,94vw);height:auto;aspect-ratio:1;border-radius:50%;grid-template-columns:1fr}.game-copy{padding:75px 70px 34px;text-align:center;align-items:center}.game-copy h3{font-size:38px}.game-art{min-height:0;border-radius:0 0 100% 100%}.hex-board{transform:scale(.58) rotate(-8deg);margin:-35px 0}.games-head{text-align:center}.games-head p{margin-inline:auto}}
-.game-card{display:flex;flex-direction:column-reverse;background:#06152f}.game-art{flex:1 1 52%;width:100%;min-height:0;border-radius:50% 50% 0 0;background:#06152f}.game-art:before{display:none}.game-feature{display:block;width:92%;height:100%;object-fit:contain}.game-copy{flex:1 1 48%;padding:25px 120px 65px;align-items:center;text-align:center;background:#f3edff}.game-copy h3{margin:14px 0 9px}.game-copy p{margin-bottom:18px}.pulso-dev-logo{display:block;width:210px;height:210px;margin:0 auto 8px;background:var(--yellow) url("pulso-dev-logo-1.png") center/210px auto no-repeat;background-blend-mode:multiply}.contact-box p{max-width:650px;margin:0 auto 24px;font-size:18px;line-height:1.5}.play-button{background:#173b39}.play-button .play-mark{font-size:21px}@media(max-width:800px){.game-card{display:flex;grid-template-columns:none}.game-art{flex-basis:44%;border-radius:50% 50% 0 0}.game-feature{width:96%}.game-copy{flex-basis:56%;padding:14px 58px 48px}.game-copy h3{font-size:32px;margin:8px 0}.game-copy p{font-size:12px;margin-bottom:12px}.status{font-size:8px}.pulso-dev-logo{width:165px;height:165px;background-size:165px auto}.contact-box p{font-size:16px}}
-.hero-fauna{position:absolute;z-index:4;inset:0;pointer-events:none}.animal{position:absolute;bottom:80px;display:block;line-height:1;filter:drop-shadow(2px 3px 0 #173b3940);animation:animalWalk 3.2s ease-in-out infinite}.cow{left:37%;font-size:48px}.chicken{left:48%;bottom:61px;font-size:31px;animation-delay:-1.1s}.dog{right:32%;bottom:69px;font-size:38px;animation-delay:-2.1s}.birds{position:absolute;z-index:3;left:19%;top:190px;width:160px;height:75px;pointer-events:none}.bird{position:absolute;width:27px;height:12px;border-top:3px solid var(--ink);border-radius:50% 50% 0 0;transform:rotate(10deg);animation:birdFly 5s ease-in-out infinite}.bird:after{content:"";position:absolute;width:27px;height:12px;border-top:3px solid var(--ink);border-radius:50% 50% 0 0;left:22px;top:-3px;transform:scaleX(-1) rotate(18deg)}.bird.b2{left:75px;top:32px;transform:scale(.72) rotate(-4deg);animation-delay:-1.8s}.bird.b3{left:128px;top:5px;transform:scale(.5) rotate(8deg);animation-delay:-3.4s}@keyframes animalWalk{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-5px) rotate(1deg)}}@keyframes birdFly{0%,100%{margin-top:0}50%{margin-top:-10px}}@media(max-width:800px){.cow{left:26%;font-size:40px}.chicken{left:47%;font-size:27px}.dog{right:21%;font-size:34px}.birds{left:8%;top:175px;transform:scale(.8)}}@media(prefers-reduced-motion:reduce){.animal,.bird{animation:none}}
-.animal{bottom:12px;filter:drop-shadow(2px 3px 0 #173b3935)}.animal svg{display:block;overflow:visible}.cow{left:35%}.cow svg{width:98px;height:66px}.chicken{left:49%;bottom:12px}.chicken svg{width:56px;height:58px}.dog{right:31%;bottom:12px}.dog svg{width:76px;height:60px}.final-letter{position:relative;display:inline-block}.title-stars{position:absolute;width:92px;height:82px;left:58%;top:35%;pointer-events:none}.title-stars i{position:absolute;color:var(--yellow);font-style:normal;line-height:1;-webkit-text-stroke:2px var(--ink);filter:drop-shadow(2px 2px 0 var(--orange))}.title-stars i:nth-child(1){font-size:24px;left:4px;top:-22px;transform:rotate(-12deg)}.title-stars i:nth-child(2){font-size:38px;left:48px;top:5px;transform:rotate(9deg)}.title-stars i:nth-child(3){font-size:20px;left:24px;top:48px;transform:rotate(18deg)}@media(max-width:800px){.cow{left:24%}.cow svg{width:78px}.chicken{left:48%}.chicken svg{width:48px}.dog{right:18%}.dog svg{width:65px}.birds{left:8%;top:175px;transform:scale(.8)}.title-stars{left:53%;transform:scale(.82)}}
-.hero-copy h1 .final-letter{color:var(--ink);-webkit-text-stroke:0;text-shadow:4px 4px 0 #ffffff73}.game-card{position:relative;display:block;background:#06152f}.game-art{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#06152f}.game-feature{width:100%;height:100%;object-fit:contain}.game-copy{position:absolute;z-index:3;inset:auto 0 72px;display:flex;padding:0;background:transparent;align-items:center;justify-content:center}.game-copy .button{box-shadow:5px 5px 0 #06152f}.contact-box p strong{font-weight:900}@media(max-width:800px){.game-art{position:absolute;inset:0;width:100%;height:100%;border-radius:50%}.game-copy{position:absolute;inset:auto 0 46px;padding:0}.game-feature{width:100%;height:100%}}
-</style></head><body>
-<nav class="nav"><a class="brand" href="#inicio" aria-label="PULSO — início"><span class="brand-logo" aria-hidden="true"></span></a><div class="links"><a href="#mapa">Nossas ideias</a><a href="#jogos">Jogos & simulações</a><a href="#contato">Sobre a PULSO</a><a class="talk" href="mailto:contato@pulso.info">Bora conversar →</a></div><button class="menu" aria-label="Abrir menu">☰</button></nav>
-<main><section class="hero" id="inicio"><div class="cloud c1"></div><div class="cloud c2"></div><div class="sun"></div><div class="birds" aria-hidden="true"><i class="bird b1"></i><i class="bird b2"></i><i class="bird b3"></i></div><div class="hero-copy"><span class="kicker">Feito em Altamira–Pará</span><h1>Soluções para nossa terrinh<span class="final-letter">a<span class="title-stars" aria-hidden="true"><i>✦</i><i>✦</i><i>✦</i></span></span></h1></div><div class="hero-town"><div class="hill a"></div><div class="hill b"></div><i class="house ha"></i><i class="house hb"></i><i class="house hc"></i><i class="tree t1"></i><i class="tree t2"></i><i class="tree t3"></i></div><div class="hero-fauna" aria-hidden="true"><span class="animal cow"><svg viewBox="0 0 120 78"><g stroke="#173b39" stroke-width="4" stroke-linejoin="round"><rect x="20" y="23" width="68" height="36" rx="15" fill="#fff8e7"/><circle cx="94" cy="32" r="17" fill="#fff8e7"/><path d="M83 18l-7-10 15 7M104 18l9-9-3 15" fill="#ffd45c"/><path d="M31 56v17M48 56v17M72 56v17M84 54v19" fill="none" stroke-linecap="round"/><path d="M20 31Q7 24 11 14" fill="none" stroke-linecap="round"/><path d="M35 24c8 2 12 8 8 16-9 2-15-4-15-11M61 44c7-7 15-6 21 1-3 9-14 12-21 4" fill="#173b39" stroke="none"/><circle cx="99" cy="29" r="2.5" fill="#173b39" stroke="none"/></g></svg></span><span class="animal chicken"><svg viewBox="0 0 70 74"><g stroke="#173b39" stroke-width="4" stroke-linejoin="round"><circle cx="31" cy="37" r="21" fill="#fff8e7"/><circle cx="47" cy="20" r="13" fill="#fff8e7"/><path d="M57 20l11 6-11 5z" fill="#ffd45c"/><path d="M40 9q5-10 9 0q7-8 8 3" fill="#ff7048"/><path d="M24 56v13m17-13v13M18 70h12m5 0h12" fill="none" stroke-linecap="round"/><path d="M17 31q15 2 19 17-16 3-24-8z" fill="#ffd45c"/><circle cx="50" cy="18" r="2" fill="#173b39" stroke="none"/></g></svg></span><span class="animal dog"><svg viewBox="0 0 96 72"><g stroke="#173b39" stroke-width="4" stroke-linejoin="round"><rect x="20" y="28" width="49" height="29" rx="13" fill="#b87845"/><circle cx="72" cy="27" r="16" fill="#d99355"/><path d="M64 15l-5-12 15 9M78 14L91 6l-6 17" fill="#8e5836"/><path d="M27 53v15m15-15v15m18-15v15m12-27v27" fill="none" stroke-linecap="round"/><path d="M20 35Q5 25 8 14" fill="none" stroke-linecap="round"/><circle cx="77" cy="25" r="2.5" fill="#173b39" stroke="none"/><circle cx="87" cy="32" r="3" fill="#173b39" stroke="none"/></g></svg></span></div></section>
-<section class="world" id="mapa"><svg class="altamira-map" viewBox="0 0 1440 1780" preserveAspectRatio="none" aria-label="Mapa ilustrado e simplificado da área urbana de Altamira junto ao rio Xingu"><defs><pattern id="waves" width="34" height="20" patternUnits="userSpaceOnUse"><path d="M0 10q8-8 17 0t17 0" fill="none" stroke="#b9eff5" stroke-width="3" opacity=".6"/></pattern><pattern id="blocks" width="76" height="58" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="56" height="38" rx="7" fill="#f5ba65" stroke="#173b39" stroke-width="3"/><path d="M66 0v58M0 49h76" stroke="#fff1c5" stroke-width="8"/></pattern></defs><path class="xingu-water" d="M1510 340C1260 360 1265 520 1110 590C925 675 1020 820 885 915C730 1025 795 1195 590 1280C390 1365 300 1515 120 1810H1510Z" fill="#43a9cf" stroke="#173b39" stroke-width="8"/><path d="M1510 340C1260 360 1265 520 1110 590C925 675 1020 820 885 915C730 1025 795 1195 590 1280C390 1365 300 1515 120 1810H1510Z" fill="url(#waves)"/><path class="water-line" d="M1390 460C1190 510 1205 630 1030 710M880 1030C690 1140 650 1310 460 1400M1180 910c-90 80-100 180-210 235" fill="none" stroke="#d7f5f5" stroke-width="7" stroke-linecap="round"/><path d="M110 315C420 240 760 285 1110 420L1060 915C850 1110 610 1240 335 1395L65 980Z" fill="#aad97a" stroke="#173b39" stroke-width="7"/><path class="urban-detail" d="M255 450C510 375 760 420 1005 515L942 890C725 1040 540 1120 310 1215L145 885Z" fill="url(#blocks)" stroke="#173b39" stroke-width="6"/><g class="urban-detail" fill="#ef855e" stroke="#173b39" stroke-width="4"><rect class="urban-block" x="350" y="525" width="84" height="61" rx="9"/><rect class="urban-block" x="465" y="480" width="92" height="70" rx="9"/><rect class="urban-block" x="595" y="520" width="76" height="64" rx="9"/><rect class="urban-block" x="705" y="475" width="96" height="72" rx="9"/><rect class="urban-block" x="825" y="535" width="74" height="60" rx="9"/><rect class="urban-block" x="410" y="670" width="82" height="64" rx="9"/><rect class="urban-block" x="550" y="630" width="98" height="72" rx="9"/><rect class="urban-block" x="715" y="660" width="84" height="62" rx="9"/></g><path class="draw-road" d="M45 420C360 350 710 365 1110 485" fill="none" stroke="#173b39" stroke-width="34"/><path class="draw-road" d="M45 420C360 350 710 365 1110 485" fill="none" stroke="#ffd45c" stroke-width="24"/><path d="M45 420C360 350 710 365 1110 485" fill="none" stroke="#fff8e7" stroke-width="4" stroke-dasharray="18 16"/><path class="draw-road" d="M520 270C545 560 610 850 760 1090" fill="none" stroke="#173b39" stroke-width="25"/><path class="draw-road" d="M520 270C545 560 610 850 760 1090" fill="none" stroke="#ed9e50" stroke-width="17"/><g fill="none" stroke-linecap="round"><path class="draw-creek" d="M250 180C275 430 210 620 330 895C380 1005 420 1120 455 1325" stroke="#173b39" stroke-width="34"/><path class="draw-creek" d="M250 180C275 430 210 620 330 895C380 1005 420 1120 455 1325" stroke="#56b9d5" stroke-width="25"/><path class="draw-creek" d="M820 205C785 390 865 570 835 775C820 875 790 930 775 1010" stroke="#173b39" stroke-width="31"/><path class="draw-creek" d="M820 205C785 390 865 570 835 775C820 875 790 930 775 1010" stroke="#56b9d5" stroke-width="22"/></g><g class="urban-detail" font-family="Trebuchet MS" font-size="20" font-weight="900" fill="#173b39"><text x="68" y="390">BR-230 · TRANSAMAZÔNICA</text><text x="1050" y="720" fill="#fff">RIO XINGU</text><text x="175" y="760" transform="rotate(73 175 760)">IGARAPÉ ALTAMIRA</text></g><g class="map-car"><rect x="10" y="391" width="54" height="29" rx="8" fill="#ff7048" stroke="#173b39" stroke-width="4"/><circle cx="23" cy="422" r="6" fill="#173b39"/><circle cx="51" cy="422" r="6" fill="#173b39"/></g><g class="map-boat" transform="translate(1020 1180)"><path d="M0 22h78l-15 23H15Z" fill="#fff8e7" stroke="#173b39" stroke-width="5"/><path d="M40 0v24M40 3l28 16H42Z" fill="#ffd45c" stroke="#173b39" stroke-width="4"/></g><g fill="#3f9558" stroke="#173b39" stroke-width="4"><circle class="map-tree" cx="105" cy="255" r="35"/><circle class="map-tree" cx="160" cy="290" r="28"/><circle class="map-tree" cx="1000" cy="270" r="37"/><circle class="map-tree" cx="1080" cy="300" r="29"/><circle class="map-tree" cx="170" cy="1110" r="36"/></g><g class="urban-detail" fill="#fff8e7" stroke="#173b39" stroke-width="4"><path d="M1050 980l38-25 38 25v52h-76z"/><path d="M1150 900l34-22 34 22v48h-68z"/><path d="M920 1110l32-21 32 21v45h-64z"/></g></svg><div class="map-title"><span class="kicker">Altamira vista do alto</span><h2>Cada parada resolve<br>um pedaço da vida.</h2><p>Um mapa afetivo inspirado na cidade entre o Xingu, os igarapés, a Transamazônica e os caminhos que ligam gente, campo e floresta.</p></div>
-<article class="product-ball edu"><span class="category">Educação</span><h3>Rede Acadêmica</h3><p>Um hub para encontrar artigos sobre Altamira e região, publicados de 1990 a 2026 e filtrados por temas.</p><div class="mini-tags"><span>36 anos de pesquisa</span><span>busca por tema</span></div></article><article class="product-ball health"><span class="category">Saúde</span><h3>Guia de Saúde</h3><p>Profissionais por especialidade e mapa de exames nas clínicas da cidade: medicina, odonto, fisio, psicologia, nutrição e mais.</p><div class="mini-tags"><span>especialidades</span><span>exames</span><span>cuidados</span></div></article><article class="product-ball community"><span class="category">Comunidade</span><h3>Lá na Brasília</h3><p>O bairro Brasília no bolso: comércio, avisos, obituário, classificados e informação de vizinho para vizinho.</p><div class="mini-tags"><span>bairro</span><span>avisos</span><span>comércio</span></div></article><article class="product-ball tourism"><span class="category">Turismo</span><h3>Econexão</h3><p>Rotas conectadas a experiências, natureza, comunidades e estabelecimentos que fazem parte do caminho.</p><div class="mini-tags"><span>rotas</span><span>natureza</span><span>comunidades</span></div></article><article class="product-ball food"><span class="category">Segurança alimentar</span><h3>Da Roça</h3><p>Produção familiar regularizada direto para a demanda urbana, com venda e entrega na cidade.</p><div class="mini-tags"><span>origem local</span><span>entrega</span><span>renda no campo</span></div></article><span class="map-label l-rio">Igarapé do caminho</span><span class="map-label l-centro">Centro urbano</span><span class="map-label l-roca">Área de produção</span></section>
-<section class="games" id="jogos"><div class="wrap"><div class="games-head"><div><span class="kicker" style="color:var(--ink)">Jogos & simulação</span><h2>Aprender também<br>pode ser brincadeira.</h2></div><p>Estamos criando novas formas de explorar ideias, sistemas e desafios. É uma área em construção — e já tem um jogo pronto para testar.</p></div><article class="game-card"><div class="game-art"><img class="game-feature" src="hexa-infinity-recurso-grafico-1024x500.png" alt="Logo e tela do jogo Hexa Infinity"></div><div class="game-copy"><a class="button" href="https://brunodarwich.github.io/hexa-sort-3d/" target="_blank" rel="noopener">Jogar agora ↗</a></div></article><p class="game-note"><span>Em desenvolvimento:</span> novas simulações e experiências interativas chegam em breve.</p></div></section>
-<section class="contact" id="contato"><div class="wrap contact-box"><span class="pulso-dev-logo" role="img" aria-label="Pulso Dev"></span><h2>Gostou da proposta?</h2><p><strong>Conheça os apps da Pulso Dev: tecnologia criada por aqui para transformar a cidade.</strong></p><a class="button play-button" href="https://play.google.com/store/search?q=Pulso%20Dev&amp;c=apps" target="_blank" rel="noopener"><span class="play-mark">▶</span> Baixar na Google Play</a></div></section></main><footer><div class="wrap foot"><a class="brand" href="#inicio"><span class="pulse"></span>PULSO</a><small>Dados locais · ideias vivas · impacto por perto.</small><small>Altamira, Pará · 2026</small></div></footer><script>const m=document.querySelector('.menu'),l=document.querySelector('.links'),t=document.querySelector('.map-title');t.innerHTML='<h2>Nosso mapa de ideias</h2>';m.onclick=()=>{l.classList.toggle('open');m.textContent=l.classList.contains('open')?'×':'☰'};l.querySelectorAll('a').forEach(a=>a.onclick=()=>{l.classList.remove('open');m.textContent='☰'});</script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#73c7d4">
+  <title>PULSO — Soluções para nossa terrinha | Altamira–PA</title>
+  <style>
+    /* ==========================================================================
+       PULSO — THEME TOKENS & BASE (Super Mario World x Cozy Farm Aesthetic)
+       ========================================================================== */
+    :root {
+      --ink: #173b39;
+      --cream: #fff8e7;
+      --sky: #73c7d4;
+      --sky-deep: #5bb3c2;
+      --river: #43a9cf;
+      --river-dark: #277b9d;
+      --grass: #8bd064;
+      --grass-dark: #6eb744;
+      --grass-light: #aad97a;
+      --dirt-road: #ffd45c;
+      --dirt-border: #d99a34;
+      --orange: #ff7048;
+      --orange-dark: #d84b23;
+      --yellow: #ffd45c;
+      --pink: #ef6f8f;
+      --purple: #7f72d8;
+      --blue: #3c92ca;
+      --brown: #8e5836;
+      --wood: #b87845;
+      --wood-dark: #6d3916;
+      --night-bg: #262145;
+      
+      /* Game UI tokens */
+      --shadow-hard: 5px 5px 0 var(--ink);
+      --shadow-hard-lg: 8px 9px 0 var(--ink);
+      --shadow-hard-hover: 12px 14px 0 var(--ink);
+      --border-game: 3.5px solid var(--ink);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 32px;
+
+      /* Motion Choreography Tokens */
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-pop: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--sky);
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.4;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .wrap {
+      width: min(1200px, calc(100% - 36px));
+      margin: auto;
+    }
+
+    /* ==========================================================================
+       GLOBAL MOTION SYSTEM (Asynchronous & Synchronized States)
+       ========================================================================== */
+    [data-motion] {
+      opacity: 0;
+      will-change: transform, opacity;
+      transition-timing-function: var(--ease-spring);
+    }
+
+    [data-motion="fade-up"] {
+      transform: translateY(35px);
+      transition: opacity 0.6s var(--ease-smooth), transform 0.65s var(--ease-spring);
+      transition-delay: var(--delay, 0s);
+    }
+
+    [data-motion="fade-down"] {
+      transform: translateY(-30px);
+      transition: opacity 0.6s var(--ease-smooth), transform 0.65s var(--ease-spring);
+      transition-delay: var(--delay, 0s);
+    }
+
+    [data-motion="pop-in"] {
+      transform: scale(0.35);
+      transition: opacity 0.5s ease, transform 0.65s var(--ease-pop);
+      transition-delay: var(--delay, 0s);
+    }
+
+    [data-motion].is-visible {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* ==========================================================================
+       TOP FLOATING NAV (HUD / Game Menu Style)
+       ========================================================================== */
+    .nav {
+      position: fixed;
+      z-index: 100;
+      left: 50%;
+      top: 16px;
+      transform: translateX(-50%);
+      width: min(1140px, calc(100% - 32px));
+      height: 68px;
+      padding: 0 12px 0 20px;
+      border: var(--border-game);
+      border-radius: 28px;
+      background: #fff8e7f2;
+      box-shadow: 0 7px 0 #173b3935;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s ease;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 145px;
+      height: 42px;
+      background: #fff8e7 url("pulso.png_20260922115227.jpeg") center/235px auto no-repeat;
+      background-blend-mode: multiply;
+    }
+
+    .pulse {
+      width: 38px;
+      height: 38px;
+      background: var(--orange);
+      border: var(--border-game);
+      border-radius: 50%;
+      position: relative;
+      animation: heartPulse 2s ease-in-out infinite;
+    }
+
+    .pulse:before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border: 3px solid var(--cream);
+      border-radius: 50%;
+      left: 7px;
+      top: 7px;
+    }
+
+    .pulse:after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: var(--yellow);
+      border-radius: 50%;
+      left: 13px;
+      top: 13px;
+    }
+
+    @keyframes heartPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .links a {
+      font-size: 13.5px;
+      font-weight: 900;
+      padding: 9px 14px;
+      border-radius: 14px;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .links a:hover {
+      background: var(--yellow);
+      transform: translateY(-2px);
+    }
+
+    .links .talk {
+      background: var(--ink);
+      color: white;
+      padding: 10px 18px;
+      box-shadow: 3px 3px 0 var(--orange);
+      border: 2px solid var(--ink);
+    }
+
+    .links .talk:hover {
+      background: var(--orange);
+      color: white;
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+
+    /* Sound FX Toggle Button */
+    .sound-toggle {
+      border: 2px solid var(--ink);
+      background: var(--cream);
+      border-radius: 14px;
+      padding: 7px 12px;
+      font-size: 13px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 2px 2px 0 var(--ink);
+      transition: 0.15s;
+    }
+
+    .sound-toggle:hover {
+      background: var(--yellow);
+      transform: translateY(-2px);
+    }
+
+    .sound-toggle.active {
+      background: #c5f1a5;
+    }
+
+    .menu {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 26px;
+      font-weight: bold;
+      color: var(--ink);
+    }
+
+    /* ==========================================================================
+       SECTION 1: HERO — A FAZENDINHA 2D (Asynchronous Layer Buildup)
+       ========================================================================== */
+    .hero {
+      min-height: 870px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #5bbecd 0%, #8ee1ec 42%, #c3f2f6 58%, #88d45c 59%, #71be46 100%);
+      padding-top: 130px;
+    }
+
+    /* 1.1 Fluffy Illustrated Vector Clouds */
+    .cloud {
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      filter: drop-shadow(0 6px 0 #173b3920);
+      animation: drift linear infinite;
+      transition: opacity 0.8s ease, transform 0.9s var(--ease-smooth);
+    }
+
+    .cloud svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .cloud.c1 {
+      width: 144px;
+      height: 60px;
+      top: 92px;
+      left: 4%;
+      animation-duration: 34s;
+      transform: translateX(-40px);
+      transition-delay: 0.1s;
+    }
+
+    .cloud.c2 {
+      width: 126px;
+      height: 52px;
+      top: 172px;
+      right: 5%;
+      animation-duration: 40s;
+      transform: translateX(40px);
+      transition-delay: 0.2s;
+    }
+
+    .cloud.c3 {
+      width: 102px;
+      height: 44px;
+      top: 220px;
+      left: 5%;
+      opacity: 0.92;
+      animation-duration: 46s;
+      transform: translateY(-20px);
+      transition-delay: 0.3s;
+    }
+
+    .cloud.c4 {
+      width: 88px;
+      height: 38px;
+      top: 76px;
+      left: 31%;
+      opacity: 0.88;
+      animation-duration: 52s;
+      transform: translateX(30px);
+      transition-delay: 0.35s;
+    }
+
+    .cloud.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @keyframes drift {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(35px); }
+      100% { transform: translateX(0); }
+    }
+
+    /* 1.2 Radiant Illustrated Sun with Rotating Solar Rays */
+    .sun {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: 13%;
+      top: 92px;
+      z-index: 1;
+      opacity: 0;
+      transform: scale(0.25) rotate(-20deg);
+      transition: opacity 0.75s ease, transform 0.85s var(--ease-spring);
+    }
+
+    .sun.is-visible {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+
+    .sun svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .sun .sun-rays {
+      animation: sunRaySpin 28s linear infinite;
+      transform-origin: 60px 60px;
+    }
+
+    @keyframes sunRaySpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* 1.3 Amazonian Birds (Andorinhas em Voo) */
+    .birds {
+      position: absolute;
+      z-index: 3;
+      left: 16%;
+      top: 175px;
+      width: 180px;
+      height: 85px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.8s ease 0.4s;
+    }
+
+    .birds.is-visible {
+      opacity: 1;
+    }
+
+    .bird {
+      position: absolute;
+      width: 32px;
+      height: 18px;
+      animation: birdFly 4.5s ease-in-out infinite;
+    }
+
+    .bird.b2 {
+      left: 75px;
+      top: 26px;
+      transform: scale(0.72);
+      animation-delay: -1.5s;
+    }
+
+    .bird.b3 {
+      left: 135px;
+      top: 8px;
+      transform: scale(0.55);
+      animation-delay: -3s;
+    }
+
+    @keyframes birdFly {
+      0%, 100% { transform: translateY(0) rotate(4deg); }
+      50% { transform: translateY(-14px) rotate(12deg); }
+    }
+
+    /* 1.3 Hero Copy (Synchronized Impact) */
+    .hero-copy {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 960px;
+      margin: auto;
+      padding-top: 50px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow);
+      border: var(--border-game);
+      box-shadow: 4px 4px 0 var(--ink);
+      border-radius: 999px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 1000;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      transition: transform 0.2s;
+    }
+
+    .kicker:hover {
+      transform: rotate(1deg) scale(1.04);
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(48px, 7.5vw, 88px);
+      line-height: .92;
+      letter-spacing: -.055em;
+      margin: 22px auto 16px;
+      font-weight: 1000;
+      color: var(--ink);
+      text-shadow: 4px 4px 0 #ffffff88;
+      max-width: 890px;
+    }
+
+    .hero-copy h1 span.glow-accent {
+      color: var(--cream);
+      -webkit-text-stroke: 3px var(--ink);
+      text-shadow: 5px 5px 0 var(--orange);
+    }
+
+    .hero-copy p {
+      font-size: 20px;
+      line-height: 1.45;
+      max-width: 680px;
+      margin: 0 auto;
+      font-weight: 700;
+      color: #0c2d2b;
+      text-shadow: 1px 1px 0 #ffffff66;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      border: var(--border-game);
+      background: var(--orange);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 18px;
+      font-size: 16px;
+      font-weight: 1000;
+      box-shadow: var(--shadow-hard);
+      transition: all 0.15s ease;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .button:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 3px 3px 0 var(--ink);
+      background: #ff5b2d;
+    }
+
+    .button:active {
+      transform: translate(5px, 5px);
+      box-shadow: 0 0 0 var(--ink);
+    }
+
+    .button.light {
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    .button.light:hover {
+      background: var(--yellow);
+    }
+
+    /* 1.4 Farm Town & Hills (Asynchronous Staggered Rise) */
+    .hero-town {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 320px;
+      pointer-events: none;
+    }
+
+    .hill {
+      position: absolute;
+      bottom: 0;
+      border: var(--border-game);
+      background: #78be5a;
+      border-radius: 50% 50% 0 0;
+      opacity: 0;
+      transform: translateY(90px);
+      transition: opacity 0.7s ease, transform 0.75s var(--ease-smooth);
+    }
+
+    /* Distant Background Mountain Ridges */
+    .hill.bg-a {
+      width: 840px;
+      height: 245px;
+      left: 12%;
+      bottom: 30px;
+      background: #5ea869;
+      z-index: 1;
+      transition-delay: 0.08s;
+    }
+
+    .hill.bg-b {
+      width: 680px;
+      height: 215px;
+      right: 18%;
+      bottom: 25px;
+      background: #6bb977;
+      z-index: 1;
+      transition-delay: 0.12s;
+    }
+
+    .hero-town.is-visible .hill.bg-a,
+    .hero-town.is-visible .hill.bg-b {
+      opacity: 0.88;
+      transform: translateY(0);
+    }
+
+    .hill.a {
+      width: 580px;
+      height: 175px;
+      left: -90px;
+      background: #6eb744;
+      z-index: 2;
+      transition-delay: 0.15s;
+    }
+
+    .hill.b {
+      width: 720px;
+      height: 215px;
+      right: -130px;
+      background: #82cb5b;
+      z-index: 2;
+      transition-delay: 0.25s;
+    }
+
+    .hill.c {
+      width: 440px;
+      height: 140px;
+      left: 42%;
+      bottom: -30px;
+      background: #8cd065;
+      z-index: 2;
+      transition-delay: 0.35s;
+    }
+
+    .hero-town.is-visible .hill {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Winding Country Road */
+    .farm-road {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 220px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease 0.35s, transform 0.75s var(--ease-smooth) 0.35s;
+    }
+
+    .hero-town.is-visible .farm-road {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Wooden Country Fence */
+    .farm-fence {
+      position: absolute;
+      bottom: 82px;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      z-index: 3;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease 0.4s, transform 0.7s var(--ease-spring) 0.4s;
+    }
+
+    .hero-town.is-visible .farm-fence {
+      opacity: 0.95;
+      transform: translateY(0);
+    }
+
+    .fence-rail {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #c2854e;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .fence-rail.top { top: 6px; }
+    .fence-rail.bottom { top: 18px; }
+
+    .fence-post {
+      width: 9px;
+      height: 28px;
+      background: #b87845;
+      border: 2px solid var(--ink);
+      border-radius: 3px 3px 0 0;
+      position: relative;
+    }
+
+    /* Farmhouses (Cozy Illustrated Architecture) */
+    .house {
+      position: absolute;
+      z-index: 4;
+      display: block;
+      filter: drop-shadow(4px 5px 0 #173b3935);
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.2);
+      transition: opacity 0.55s ease, transform 0.65s var(--ease-pop);
+      pointer-events: auto;
+    }
+
+    .house:hover {
+      transform: translateY(-8px) scale(1.07) !important;
+      filter: drop-shadow(6px 9px 0 #173b3945);
+    }
+
+    .house:active {
+      transform: translateY(-2px) scale(0.98) !important;
+    }
+
+    .house svg {
+      display: block;
+      overflow: visible;
+    }
+
+    /* Chimney Smoke Puff Animations */
+    .smoke-puff-1 {
+      animation: chimneySmokePuff 2.8s infinite ease-out;
+      transform-origin: center;
+    }
+    .smoke-puff-2 {
+      animation: chimneySmokePuff 2.8s infinite ease-out 0.9s;
+      transform-origin: center;
+    }
+    .smoke-puff-3 {
+      animation: chimneySmokePuff 2.8s infinite ease-out 1.8s;
+      transform-origin: center;
+    }
+
+    @keyframes chimneySmokePuff {
+      0% {
+        transform: translateY(0) scale(0.4);
+        opacity: 0;
+      }
+      25% {
+        opacity: 0.9;
+        transform: translateY(-10px) scale(0.8);
+      }
+      75% {
+        opacity: 0.6;
+        transform: translateY(-24px) scale(1.3) translateX(-4px);
+      }
+      100% {
+        transform: translateY(-38px) scale(1.8) translateX(-8px);
+        opacity: 0;
+      }
+    }
+
+    /* Weathervane Sway */
+    .weathervane-sway {
+      animation: weathervaneSway 4s ease-in-out infinite;
+      transform-origin: 50px 15px;
+    }
+
+    @keyframes weathervaneSway {
+      0%, 100% { transform: rotate(0deg); }
+      30% { transform: rotate(9deg); }
+      70% { transform: rotate(-7deg); }
+    }
+
+    /* Window Warm Glow */
+    .window-glow {
+      animation: windowWarmPulse 3.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes windowWarmPulse {
+      0%, 100% { fill: #ffd45c; }
+      50% { fill: #ffe894; }
+    }
+
+    /* Positioning and Sizing of the 3 Farmhouses (Enlarged & Re-oriented) */
+    .house.ha {
+      left: 8%;
+      bottom: 102px;
+      transition-delay: 0.45s;
+    }
+    .house.ha svg {
+      width: 136px;
+      height: 136px;
+    }
+
+    .house.hb {
+      left: 24.5%;
+      bottom: 90px;
+      transition-delay: 0.55s;
+    }
+    .house.hb svg {
+      width: 122px;
+      height: 128px;
+    }
+
+    .house.hc {
+      right: 17%;
+      bottom: 116px;
+      transition-delay: 0.65s;
+    }
+    .house.hc svg {
+      width: 144px;
+      height: 138px;
+    }
+
+    .hero-town.is-visible .house.ha { opacity: 1; transform: scale(1); }
+    .hero-town.is-visible .house.hb { opacity: 1; transform: scale(1); }
+    .hero-town.is-visible .house.hc { opacity: 1; transform: scale(1); }
+
+    /* 1.4 Detailed Handcrafted Vector Trees & Meadow */
+    .tree {
+      position: absolute;
+      z-index: 3;
+      pointer-events: none;
+      filter: drop-shadow(3px 4px 0 #173b392b);
+      opacity: 0;
+      transform: scale(0.2);
+      transition: opacity 0.6s ease, transform 0.7s var(--ease-spring);
+    }
+
+    .tree svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .tree-canopy {
+      transform-origin: 50% 90%;
+      animation: gentleTreeSway 5.5s ease-in-out infinite alternate;
+    }
+
+    .tree.t2 .tree-canopy {
+      animation-delay: -2.4s;
+      animation-duration: 6.2s;
+    }
+
+    .tree.t3 .tree-canopy {
+      animation-delay: -1.2s;
+      animation-duration: 4.8s;
+    }
+
+    @keyframes gentleTreeSway {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(1.8deg) skewX(0.8deg); }
+      100% { transform: rotate(-1.5deg) skewX(-0.6deg); }
+    }
+
+    .tree.t1 {
+      left: 2.2%;
+      bottom: 70px;
+      width: 112px;
+      height: 142px;
+      transition-delay: 0.45s;
+    }
+
+    .tree.t2 {
+      right: 2.5%;
+      bottom: 74px;
+      width: 108px;
+      height: 138px;
+      transition-delay: 0.55s;
+    }
+
+    .tree.t3 {
+      right: 33.5%;
+      bottom: 82px;
+      width: 78px;
+      height: 102px;
+      transition-delay: 0.65s;
+    }
+
+    .tree.t4 {
+      left: 36.5%;
+      bottom: 80px;
+      width: 70px;
+      height: 92px;
+      transition-delay: 0.6s;
+    }
+
+    .hero-town.is-visible .tree {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Ambient Meadow Wildflowers & Grass Tufts */
+    .meadow-flowers {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 52px;
+      z-index: 4;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.75s ease 0.45s, transform 0.75s var(--ease-spring) 0.45s;
+    }
+
+    .hero-town.is-visible .meadow-flowers {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Flitting Cozy Butterfly */
+    .butterfly {
+      position: absolute;
+      left: 28%;
+      bottom: 125px;
+      width: 32px;
+      height: 26px;
+      z-index: 6;
+      pointer-events: none;
+      filter: drop-shadow(2px 3px 0 #173b3935);
+      opacity: 0;
+      animation: butterflyFlight 13s ease-in-out infinite;
+      transition: opacity 0.8s ease 0.7s;
+    }
+
+    .hero-fauna.is-visible .butterfly {
+      opacity: 1;
+    }
+
+    .butterfly svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .butterfly-wing-left {
+      transform-origin: 13px 11px;
+      animation: wingFlutterLeft 0.22s ease-in-out infinite alternate;
+    }
+
+    .butterfly-wing-right {
+      transform-origin: 13px 11px;
+      animation: wingFlutterRight 0.22s ease-in-out infinite alternate;
+    }
+
+    @keyframes wingFlutterLeft {
+      0% { transform: scaleX(1); }
+      100% { transform: scaleX(0.2); }
+    }
+
+    @keyframes wingFlutterRight {
+      0% { transform: scaleX(1); }
+      100% { transform: scaleX(0.2); }
+    }
+
+    @keyframes butterflyFlight {
+      0% { transform: translate(0, 0) rotate(4deg); }
+      20% { transform: translate(65px, -24px) rotate(-8deg); }
+      38% { transform: translate(120px, -6px) rotate(10deg); }
+      55% { transform: translate(175px, -30px) rotate(-6deg); }
+      75% { transform: translate(95px, -16px) rotate(8deg); }
+      100% { transform: translate(0, 0) rotate(4deg); }
+    }
+
+    /* 1.5 Farm Animals (Asynchronous Staggered Entrance & Idle Actions) */
+    .hero-fauna {
+      position: absolute;
+      z-index: 5;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .animal {
+      position: absolute;
+      bottom: 25px;
+      display: block;
+      filter: drop-shadow(3px 4px 0 #173b3935);
+      cursor: pointer;
+      pointer-events: auto;
+      opacity: 0;
+      transition: opacity 0.55s ease, transform 0.65s var(--ease-spring);
+    }
+
+    .animal:hover {
+      transform: translateY(-8px) scale(1.1) !important;
+    }
+
+    .animal svg {
+      display: block;
+      overflow: visible;
+    }
+
+    /* Cow: Enters at 0.5s */
+    .cow {
+      left: 35%;
+      bottom: 20px;
+      transform: translateY(45px) scale(0.8);
+      transition-delay: 0.5s;
+    }
+
+    .cow svg {
+      width: 122px;
+      height: 92px;
+    }
+
+    /* Chicken: Enters at 0.65s */
+    .chicken {
+      left: 49%;
+      bottom: 22px;
+      transform: translateY(35px) scale(0.8);
+      transition-delay: 0.65s;
+    }
+
+    .chicken svg {
+      width: 72px;
+      height: 74px;
+    }
+
+    /* Dog: Enters at 0.8s */
+    .dog {
+      right: 28%;
+      bottom: 20px;
+      transform: translateY(40px) scale(0.8);
+      transition-delay: 0.8s;
+    }
+
+    .dog svg {
+      width: 100px;
+      height: 80px;
+    }
+
+    .hero-fauna.is-visible .animal {
+      opacity: 1;
+    }
+
+    .hero-fauna.is-visible .cow {
+      transform: translateY(0) scale(1);
+      animation: cowGraze 4s ease-in-out infinite 1.2s;
+    }
+
+    .hero-fauna.is-visible .chicken {
+      transform: translateY(0) scale(1);
+      animation: chickenPeck 2.4s ease-in-out infinite 1.4s;
+    }
+
+    .hero-fauna.is-visible .dog {
+      transform: translateY(0) scale(1);
+      animation: dogWag 3.2s ease-in-out infinite 1.6s;
+    }
+
+    /* Idle Animal Animations */
+    @keyframes cowGraze {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(3px) rotate(1.5deg); }
+      50% { transform: translateY(0) rotate(-1deg); }
+      75% { transform: translateY(4px) rotate(2deg); }
+    }
+
+    .cow-tail {
+      animation: cowTailWag 3s ease-in-out infinite alternate;
+      transform-origin: 22px 42px;
+    }
+
+    @keyframes cowTailWag {
+      0%, 100% { transform: rotate(0deg); }
+      40% { transform: rotate(-8deg); }
+      80% { transform: rotate(12deg); }
+    }
+
+    @keyframes chickenPeck {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(4px) rotate(12deg); }
+      45% { transform: translateY(7px) rotate(20deg); }
+      60% { transform: translateY(0) rotate(-2deg); }
+      80% { transform: translateY(0) rotate(0deg); }
+    }
+
+    @keyframes dogWag {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      35% { transform: translateY(-4px) rotate(2deg); }
+      70% { transform: translateY(0) rotate(-1.5deg); }
+    }
+
+    .dog-tail-group {
+      animation: dogTailSwing 0.75s ease-in-out infinite alternate;
+      transform-origin: 22px 36px;
+    }
+
+    @keyframes dogTailSwing {
+      0% { transform: rotate(-10deg); }
+      100% { transform: rotate(18deg); }
+    }
+
+    /* ==========================================================================
+       SECTION 2: OVERWORLD MAP — "NOSSO MAPA DE IDEIAS" (Sequential Stage Drops)
+       ========================================================================== */
+    .world {
+      position: relative;
+      min-height: 1850px;
+      background: var(--grass);
+      overflow: hidden;
+      border-top: 5px solid var(--ink);
+    }
+
+    .world:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(#173b3922 1.5px, transparent 1.5px),
+        linear-gradient(to right, #ffffff08 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+      background-size: 32px 32px;
+      opacity: 0.7;
+    }
+
+    /* HUD Bar: Status do Mapa */
+    .map-hud {
+      position: relative;
+      z-index: 10;
+      margin: 30px auto 0;
+      width: max-content;
+      max-width: calc(100% - 30px);
+      background: var(--ink);
+      color: var(--yellow);
+      border: 3px solid var(--yellow);
+      box-shadow: 4px 4px 0 #173b3966;
+      border-radius: 999px;
+      padding: 8px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      font-weight: 1000;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .map-hud .live-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #56e838;
+      box-shadow: 0 0 8px #56e838;
+      animation: hudBlink 1.5s infinite;
+    }
+
+    @keyframes hudBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .map-title {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding-top: 36px;
+      padding-bottom: 30px;
+    }
+
+    .map-title h2 {
+      font-size: clamp(44px, 6.5vw, 80px);
+      letter-spacing: -.055em;
+      line-height: .95;
+      margin: 14px 0 10px;
+      font-weight: 1000;
+      color: var(--ink);
+      text-shadow: 4px 4px 0 #ffffff99;
+    }
+
+    .map-title p {
+      font-weight: 750;
+      margin: 0 auto;
+      max-width: 620px;
+      font-size: 18px;
+      color: #103331;
+    }
+
+    /* Vector Map Canvas */
+    .altamira-map {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 1s ease 0.2s;
+    }
+
+    .altamira-map.is-visible {
+      opacity: 1;
+    }
+
+    /* Animated dashed trail */
+    .mario-stage-trail {
+      stroke-dasharray: 14 10;
+      animation: dashWalk 20s linear infinite;
+    }
+
+    @keyframes dashWalk {
+      to { stroke-dashoffset: -400; }
+    }
+
+    /* River water ripples & current glints */
+    .xingu-waves {
+      animation: xinguGlide 10s linear infinite;
+    }
+
+    @keyframes xinguGlide {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(24px); }
+    }
+
+    /* River dolphin playful jump */
+    .boto-leaper {
+      animation: botoJump 8s ease-in-out infinite;
+    }
+
+    @keyframes botoJump {
+      0%, 75%, 100% { transform: translate(0, 0) scale(0); opacity: 0; }
+      80% { transform: translate(-10px, -20px) rotate(-18deg) scale(1); opacity: 1; }
+      86% { transform: translate(0, -35px) rotate(6deg) scale(1.05); opacity: 1; }
+      92% { transform: translate(12px, -15px) rotate(28deg) scale(0.95); opacity: 0.9; }
+      96% { transform: translate(16px, 0px) rotate(35deg) scale(0); opacity: 0; }
+    }
+
+    .stage-pad {
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* 2.1 Asynchronous Stage Nodes (Super Mario World Level Circles) */
+    .product-ball {
+      --accent: var(--orange);
+      position: absolute;
+      z-index: 15;
+      width: 375px;
+      height: 375px;
+      border: 5px solid var(--ink);
+      border-radius: 50%;
+      background: var(--cream);
+      padding: 50px 42px 42px;
+      box-shadow: 
+        inset 0 0 0 6px #ffffff,
+        inset 0 -12px 0 #e4d7b7,
+        var(--shadow-hard-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.55s ease, transform 0.75s var(--ease-spring), box-shadow 0.25s ease;
+    }
+
+    /* Individual Resting Rotations */
+    .product-ball.edu {
+      left: max(4%, calc(50% - 560px));
+      top: 260px;
+      --accent: var(--purple);
+      transform: translateY(-80px) scale(0.85) rotate(-10deg);
+      transition-delay: 0.1s;
+    }
+
+    .product-ball.health {
+      right: max(3%, calc(50% - 570px));
+      top: 480px;
+      --accent: var(--pink);
+      width: 400px;
+      height: 400px;
+      transform: translateY(-80px) scale(0.85) rotate(10deg);
+      transition-delay: 0.28s;
+    }
+
+    .product-ball.community {
+      left: max(7%, calc(50% - 510px));
+      top: 830px;
+      --accent: var(--orange);
+      width: 350px;
+      height: 350px;
+      transform: translateY(-80px) scale(0.85) rotate(8deg);
+      transition-delay: 0.46s;
+    }
+
+    .product-ball.tourism {
+      right: max(6%, calc(50% - 515px));
+      top: 1060px;
+      --accent: var(--blue);
+      width: 365px;
+      height: 365px;
+      transform: translateY(-80px) scale(0.85) rotate(-9deg);
+      transition-delay: 0.64s;
+    }
+
+    .product-ball.food {
+      left: 50%;
+      top: 1370px;
+      --accent: #559b34;
+      width: 390px;
+      height: 390px;
+      transform: translateX(-50%) translateY(-80px) scale(0.85) rotate(8deg);
+      transition-delay: 0.82s;
+    }
+
+    /* Landed / Active States */
+    .product-ball.edu.is-visible {
+      opacity: 1;
+      transform: rotate(-2.5deg) scale(1);
+    }
+
+    .product-ball.health.is-visible {
+      opacity: 1;
+      transform: rotate(2.5deg) scale(1);
+    }
+
+    .product-ball.community.is-visible {
+      opacity: 1;
+      transform: rotate(2deg) scale(1);
+    }
+
+    .product-ball.tourism.is-visible {
+      opacity: 1;
+      transform: rotate(-2deg) scale(1);
+    }
+
+    .product-ball.food.is-visible {
+      opacity: 1;
+      transform: translateX(-50%) rotate(1.5deg) scale(1);
+    }
+
+    /* Hover Micro-interaction (Jump & Squash) */
+    .product-ball.edu:hover { transform: translateY(-14px) rotate(-1deg) scale(1.03) !important; box-shadow: var(--shadow-hard-hover); }
+    .product-ball.health:hover { transform: translateY(-14px) rotate(4deg) scale(1.03) !important; box-shadow: var(--shadow-hard-hover); }
+    .product-ball.community:hover { transform: translateY(-14px) rotate(3deg) scale(1.03) !important; box-shadow: var(--shadow-hard-hover); }
+    .product-ball.tourism:hover { transform: translateY(-14px) rotate(-1deg) scale(1.03) !important; box-shadow: var(--shadow-hard-hover); }
+    .product-ball.food:hover { transform: translateX(-50%) translateY(-14px) rotate(-1deg) scale(1.03) !important; box-shadow: var(--shadow-hard-hover); }
+
+    /* Mario Level Number Pill Badge */
+    .stage-badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: var(--yellow);
+      border: 3px solid var(--yellow);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 1000;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      box-shadow: 2px 3px 0 var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Circular Level Action Button (Mario Stage Arrow) */
+    .stage-arrow {
+      position: absolute;
+      right: 22px;
+      top: 28px;
+      width: 58px;
+      height: 58px;
+      border: 3.5px solid var(--ink);
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-size: 24px;
+      font-weight: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 3px 3px 0 var(--ink);
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .product-ball:hover .stage-arrow {
+      transform: rotate(45deg) scale(1.12);
+    }
+
+    .product-ball .category {
+      color: var(--accent);
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-weight: 1000;
+      margin-bottom: 2px;
+    }
+
+    .product-ball h3 {
+      font-size: 34px;
+      line-height: .96;
+      letter-spacing: -.045em;
+      margin: 8px 0 10px;
+      font-weight: 1000;
+      color: var(--ink);
+    }
+
+    .product-ball p {
+      font-size: 13.8px;
+      line-height: 1.44;
+      margin: 0;
+      font-weight: 700;
+      color: #3b3648;
+    }
+
+    .mini-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .mini-tags span {
+      padding: 5px 10px;
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      background: white;
+      font-size: 9.5px;
+      font-weight: 1000;
+      color: var(--ink);
+    }
+
+    /* 2.2 Hanging Wooden Signs (Pendular Swing Motion) */
+    .map-label {
+      position: absolute;
+      z-index: 8;
+      background: var(--yellow);
+      border: var(--border-game);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 1000;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      box-shadow: 4px 4px 0 var(--ink);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0;
+      transform-origin: top center;
+      transition: opacity 0.5s ease, transform 0.75s var(--ease-spring);
+    }
+
+    .map-label.l-br230 {
+      top: 310px;
+      left: max(2%, calc(50% - 660px));
+      background: #ffd45c;
+      transform: rotate(-15deg) scale(0.8);
+      transition-delay: 0.2s;
+    }
+
+    .map-label.l-univ {
+      top: 195px;
+      left: max(6%, calc(50% - 500px));
+      background: #dcd7fc;
+      transform: rotate(15deg) scale(0.8);
+      transition-delay: 0.3s;
+    }
+
+    .map-label.l-saude {
+      top: 410px;
+      right: max(4%, calc(50% - 620px));
+      background: #ffd3e0;
+      transform: rotate(15deg) scale(0.8);
+      transition-delay: 0.4s;
+    }
+
+    .map-label.l-brasilia {
+      top: 765px;
+      left: max(4%, calc(50% - 600px));
+      background: #ffd9b3;
+      transform: rotate(-15deg) scale(0.8);
+      transition-delay: 0.5s;
+    }
+
+    .map-label.l-igarape {
+      top: 925px;
+      left: 42%;
+      background: #b9eff5;
+      transform: rotate(20deg) scale(0.8);
+      transition-delay: 0.55s;
+    }
+
+    .map-label.l-orla {
+      top: 995px;
+      right: max(4%, calc(50% - 600px));
+      background: #bee3f8;
+      transform: rotate(-15deg) scale(0.8);
+      transition-delay: 0.65s;
+    }
+
+    .map-label.l-roca {
+      top: 1330px;
+      left: max(6%, calc(50% - 500px));
+      background: #b5e87a;
+      transform: rotate(-15deg) scale(0.8);
+      transition-delay: 0.75s;
+    }
+
+    .map-label.l-xingu {
+      top: 660px;
+      right: max(2%, calc(50% - 680px));
+      background: #89e2ee;
+      transform: rotate(15deg) scale(0.8);
+      transition-delay: 0.85s;
+    }
+
+    .map-label.l-br230.is-visible { opacity: 1; transform: rotate(-3deg) scale(1); }
+    .map-label.l-univ.is-visible { opacity: 1; transform: rotate(2deg) scale(1); }
+    .map-label.l-saude.is-visible { opacity: 1; transform: rotate(3deg) scale(1); }
+    .map-label.l-brasilia.is-visible { opacity: 1; transform: rotate(-2deg) scale(1); }
+    .map-label.l-igarape.is-visible { opacity: 1; transform: rotate(4deg) scale(1); }
+    .map-label.l-orla.is-visible { opacity: 1; transform: rotate(-3deg) scale(1); }
+    .map-label.l-roca.is-visible { opacity: 1; transform: rotate(-2deg) scale(1); }
+    .map-label.l-xingu.is-visible { opacity: 1; transform: rotate(2deg) scale(1); }
+
+    /* ==========================================================================
+       SECTION 3: GAMES — "FASE BÔNUS / TENDA ARCADE" (Synchronized Warp)
+       ========================================================================== */
+    .games {
+      position: relative;
+      background: var(--night-bg);
+      color: white;
+      padding: 110px 0;
+      overflow: hidden;
+      border-top: 5px solid var(--ink);
+    }
+
+    .games:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(#ffffff22 2px, transparent 2px),
+        radial-gradient(#ffd45c33 1.5px, transparent 1.5px);
+      background-size: 60px 60px, 120px 120px;
+      background-position: 0 0, 30px 30px;
+    }
+
+    .games-head {
+      position: relative;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+
+    .games-head h2 {
+      font-size: clamp(42px, 6vw, 76px);
+      letter-spacing: -.055em;
+      line-height: .95;
+      margin: 14px 0 0;
+      font-weight: 1000;
+      text-shadow: 4px 4px 0 #0f0c1d;
+    }
+
+    .games-head p {
+      max-width: 440px;
+      color: #d6d1f1;
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    /* 3.1 Warp / Arcade Zoom-in */
+    .game-card {
+      position: relative;
+      z-index: 5;
+      display: flex;
+      flex-direction: column-reverse;
+      width: min(840px, 94vw);
+      margin: auto;
+      border: 5px solid #0f0c1d;
+      border-radius: var(--radius-lg);
+      background: #06152f;
+      overflow: hidden;
+      box-shadow: 0 0 0 #0f0c1d;
+      opacity: 0;
+      transform: scale(0.86) translateY(40px);
+      transition: opacity 0.7s ease 0.2s, transform 0.8s var(--ease-spring) 0.2s, box-shadow 0.8s var(--ease-spring) 0.2s;
+    }
+
+    .game-card.is-visible {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      box-shadow: 16px 18px 0 #0f0c1d;
+    }
+
+    .game-art {
+      width: 100%;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #1a2f64 0%, #06152f 70%);
+      padding: 20px;
+      position: relative;
+    }
+
+    .game-feature {
+      display: block;
+      max-width: 95%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 18px #00000088);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .game-card:hover .game-feature {
+      transform: scale(1.03);
+    }
+
+    .game-copy {
+      padding: 38px 45px;
+      background: #f7f3ff;
+      color: var(--ink);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 4px solid var(--ink);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      padding: 6px 14px;
+      background: #d9f39e;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: .12em;
+      font-weight: 1000;
+      box-shadow: 2px 2px 0 var(--ink);
+    }
+
+    .status i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #469a2a;
+      box-shadow: 0 0 6px #469a2a;
+    }
+
+    .game-copy h3 {
+      font-size: 42px;
+      letter-spacing: -.05em;
+      line-height: .98;
+      margin: 14px 0 10px;
+      font-weight: 1000;
+    }
+
+    .game-copy p {
+      font-weight: 700;
+      color: #555067;
+      max-width: 580px;
+      margin: 0 auto 24px;
+      font-size: 16px;
+    }
+
+    .game-note {
+      position: relative;
+      z-index: 5;
+      margin-top: 35px;
+      text-align: center;
+      color: #b5aedc;
+      font-weight: 750;
+      font-size: 15px;
+    }
+
+    .game-note span {
+      color: var(--yellow);
+    }
+
+    /* ==========================================================================
+       SECTION 4: CONTACT / STUDIO OUTRO ("SOBRE A PULSO")
+       ========================================================================== */
+    .contact {
+      background: var(--yellow);
+      border-top: 5px solid var(--ink);
+      padding: 95px 0;
+      position: relative;
+    }
+
+    .contact-box {
+      text-align: center;
+      max-width: 820px;
+      margin: auto;
+    }
+
+    /* 4.1 Playful Rotating Stamp Entrance */
+    .pulso-dev-logo {
+      display: block;
+      width: 220px;
+      height: 220px;
+      margin: 0 auto 12px;
+      background: var(--yellow) url("pulso-dev-logo-1.png") center/220px auto no-repeat;
+      background-blend-mode: multiply;
+      opacity: 0;
+      transform: scale(0.6) rotate(-16deg);
+      transition: opacity 0.6s ease, transform 0.75s var(--ease-spring);
+    }
+
+    .pulso-dev-logo.is-visible {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+
+    .pulso-dev-logo:hover {
+      transform: scale(1.06) rotate(3deg) !important;
+    }
+
+    .contact h2 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: .96;
+      letter-spacing: -.055em;
+      margin: 12px auto 20px;
+      font-weight: 1000;
+    }
+
+    .contact p {
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 1.5;
+      margin: 0 auto 30px;
+      color: #173b39;
+    }
+
+    .play-button {
+      background: var(--ink);
+      color: white;
+      font-size: 18px;
+      padding: 16px 30px;
+      border-radius: 20px;
+    }
+
+    .play-button:hover {
+      background: #0f2726;
+      color: var(--yellow);
+    }
+
+    .play-button .play-mark {
+      color: #56e838;
+      font-size: 22px;
+    }
+
+    .contact.is-visible .play-button {
+      animation: gentleBreathe 3s ease-in-out infinite 1.2s;
+    }
+
+    @keyframes gentleBreathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      background: var(--ink);
+      color: white;
+      padding: 38px 0;
+      border-top: 4px solid var(--ink);
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .foot small {
+      color: #a7c4bf;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .foot .brand {
+      color: white;
+    }
+
+    /* ==========================================================================
+       ACCESSIBILITY & REDUCED MOTION PREFERENCES
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      [data-motion],
+      .product-ball,
+      .map-label,
+      .hero-town *,
+      .hero-fauna .animal,
+      .sun,
+      .cloud,
+      .game-card,
+      .pulso-dev-logo,
+      .altamira-map {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+    }
+
+    /* ==========================================================================
+       RESPONSIVE ADAPTATIONS (Mobile & Tablet)
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 75px;
+        background: var(--cream);
+        border: var(--border-game);
+        border-radius: var(--radius-md);
+        padding: 16px;
+        flex-direction: column;
+        box-shadow: var(--shadow-hard);
+      }
+
+      .links.open {
+        display: flex;
+      }
+
+      .links a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .menu {
+        display: block;
+      }
+
+      .hero {
+        min-height: 740px;
+      }
+
+      .sun {
+        right: -20px;
+        top: 90px;
+        transform: scale(0.85);
+      }
+
+      .cow { left: 20%; }
+      .chicken { left: 45%; }
+      .dog { right: 18%; }
+
+      /* Mobile Overworld Map: Vertical stage journey */
+      .world {
+        min-height: auto;
+        padding-bottom: 90px;
+      }
+
+      .altamira-map, .map-label {
+        display: none;
+      }
+
+      .product-ball, .edu, .health, .community, .tourism, .food {
+        position: relative;
+        inset: auto;
+        transform: none !important;
+        margin: 32px auto;
+        width: min(390px, calc(100% - 32px));
+        height: auto;
+        min-height: 330px;
+        border-radius: 40px;
+        padding: 45px 32px;
+      }
+
+      .product-ball:hover {
+        transform: translateY(-6px) !important;
+      }
+
+      .games-head {
+        display: block;
+        text-align: center;
+      }
+
+      .games-head p {
+        margin: 14px auto 0;
+      }
+
+      .game-art {
+        height: 260px;
+      }
+
+      .game-copy {
+        padding: 30px 22px;
+      }
+
+      .game-copy h3 {
+        font-size: 34px;
+      }
+
+      .foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .house.ha svg { width: 104px; height: 104px; }
+      .house.hb svg { width: 94px; height: 98px; }
+      .house.hc svg { width: 110px; height: 105px; }
+      .house.ha { left: 4%; bottom: 88px; }
+      .house.hb { left: 22%; bottom: 80px; }
+      .house.hc { right: 5%; bottom: 98px; }
+
+      .cow svg { width: 98px; height: 74px; }
+      .chicken svg { width: 60px; height: 62px; }
+      .dog svg { width: 84px; height: 68px; }
+      .cow { left: 28%; bottom: 18px; }
+      .chicken { left: 47%; bottom: 18px; }
+      .dog { right: 20%; bottom: 18px; }
+
+      .tree.t1 { width: 82px; height: 106px; left: 1%; bottom: 68px; }
+      .tree.t2 { width: 82px; height: 106px; right: 1%; bottom: 70px; }
+      .tree.t3, .tree.t4 { display: none !important; }
+      .butterfly { display: none !important; }
+
+      .cloud.c3, .cloud.c4 { display: none !important; }
+      .cloud.c1 { width: 110px; height: 46px; top: 85px; left: 2%; }
+      .cloud.c2 { width: 95px; height: 40px; top: 155px; right: 2%; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-copy h1 {
+        font-size: 42px;
+      }
+
+      .hero-copy p {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .sun { width: 80px; height: 80px; right: 14px; top: 72px; }
+      .birds { left: 4%; top: 135px; transform: scale(0.75); }
+      .cloud.c1 { width: 90px; height: 38px; top: 80px; left: 2%; }
+      .cloud.c2 { width: 80px; height: 34px; top: 145px; right: 2%; }
+
+      .hero-town {
+        height: 200px;
+      }
+
+      .house.hb {
+        display: none !important;
+      }
+
+      .house.ha svg { width: 94px; height: 94px; }
+      .house.hc svg { width: 100px; height: 96px; }
+      .house.ha { left: 3%; bottom: 82px; }
+      .house.hc { right: 3%; bottom: 88px; }
+
+      .cow svg { width: 80px; height: 60px; }
+      .chicken svg { width: 50px; height: 52px; }
+      .dog svg { width: 70px; height: 56px; }
+      .cow { left: 16%; bottom: 16px; }
+      .chicken { left: 46%; bottom: 16px; }
+      .dog { right: 12%; bottom: 16px; }
+
+      .tree.t1 { width: 66px; height: 86px; left: 0%; bottom: 62px; }
+      .tree.t2 { width: 66px; height: 86px; right: 0%; bottom: 64px; }
+      .tree.t3, .tree.t4 { display: none !important; }
+
+      .product-ball h3 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP HUD NAVIGATION
+       ======================================================================== -->
+  <nav class="nav" data-motion="fade-down" style="--delay: 0.05s;">
+    <a class="brand" href="#inicio" aria-label="PULSO — início">
+      <span class="brand-logo" aria-hidden="true"></span>
+    </a>
+
+    <div class="nav-actions">
+      <!-- Retro Sound Toggle -->
+      <button class="sound-toggle" id="soundToggle" title="Ativar/desativar efeitos sonoros retrô" aria-label="Alternar som retrô">
+        <span id="soundIcon">🔈</span> <span id="soundLabel">Som</span>
+      </button>
+
+      <div class="links" id="navLinks">
+        <a href="#mapa">🗺️ Fases do Mapa</a>
+        <a href="#jogos">🎮 Jogos & Simulação</a>
+        <a href="#contato">🌱 Sobre a PULSO</a>
+        <a class="talk" href="mailto:contato@pulso.info">Bora conversar →</a>
+      </div>
+
+      <button class="menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ======================================================================
+         SECTION 1: HERO — A FAZENDINHA 2D (Asynchronous Layer Buildup)
+         ====================================================================== -->
+    <section class="hero" id="inicio">
+      <!-- 1. Fluffy Illustrated Vector Clouds -->
+      <div class="cloud c1" aria-hidden="true">
+        <svg viewBox="0 0 144 60" fill="none">
+          <path d="M22 48 H124 C133 48 140 41 140 32 C140 23.5 133.5 16.5 125 16 C123.5 8 116 2 107 2 C101.5 2 96.5 4.5 93.5 8.5 C88.5 4.5 82 2 75 2 C65 2 56.5 7.5 53 16 C50 14 46.5 13 42.5 13 C32 13 23.5 21 22.5 31 C15 32 9 38 9 45.5 C9 53 14.8 59 22 59 H124" fill="#e2f1f4" />
+          <path d="M22 46 H124 C132 46 138 40 138 32 C138 24.5 132 18.5 124.5 18 C123 10.5 116 5 107.5 5 C102.5 5 98 7.5 95 11 C90 7 83.5 5 76 5 C66.5 5 58.5 10.5 55.5 18.5 C52.5 16.5 49 15.5 45 15.5 C35.5 15.5 27.5 22.5 26.5 31.8 C19.5 33 14 38.5 14 45.5 C14 52 19 57 25 57 H124" fill="#ffffff" stroke="#173b39" stroke-width="3" stroke-linejoin="round" />
+          <path d="M32 24 C36 19 42 18 47 19" stroke="#e8f3f5" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M63 10 C70 8 79 8 86 12" stroke="#e8f3f5" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="cloud c2" aria-hidden="true">
+        <svg viewBox="0 0 126 52" fill="none">
+          <path d="M18 40 H108 C115 40 121 34.5 121 27.5 C121 21 116 15.5 109 15 C107.5 8 100.5 3 92.5 3 C88 3 83.5 5 80.5 8.5 C76 5 70 3 63.5 3 C54.5 3 47 8 44 15 C41 13 37.5 12 33.5 12 C25 12 18 18 17 26.5 C11 27.5 6 32.5 6 38.5 C6 44.5 11 49.5 17 49.5 H108" fill="#e2f1f4" />
+          <path d="M18 38 H108 C114 38 119 33 119 27 C119 21.5 114.5 17 108.5 16.5 C107 10 100.5 5.5 93 5.5 C88.5 5.5 84.5 7.5 81.5 10.5 C77.5 7.5 72 5.5 65.5 5.5 C57 5.5 50 10 47.5 16.5 C44.5 15 41.5 14 38 14 C30 14 23.5 19.5 22.5 27 C17 28 12 32.5 12 38 C12 43.5 16.5 48 22 48 H108" fill="#ffffff" stroke="#173b39" stroke-width="3" stroke-linejoin="round" />
+          <path d="M28 21 C32 17 38 17 42 18" stroke="#e8f3f5" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="cloud c3" aria-hidden="true">
+        <svg viewBox="0 0 102 44" fill="none">
+          <path d="M15 34 H87 C93 34 98 29.5 98 23.5 C98 18 93.5 13.5 88 13 C86 7 80 3 73 3 C69 3 65.5 4.8 63 7.8 C59 5 54 3.5 48.5 3.5 C41 3.5 34.5 7.8 32 14 C29.5 12.5 26.5 11.5 23 11.5 C16 11.5 10 16.8 9.5 23.5 C4.5 24.5 1 28.5 1 33.5 C1 38.5 5 42.5 10 42.5 H87" fill="#e2f1f4" />
+          <path d="M15 32 H87 C92 32 96 28 96 23 C96 18.5 92 15 87 14.5 C85 9 80 5.5 73.5 5.5 C69.5 5.5 66 7.2 63.8 9.8 C60 7.2 55.5 5.8 50.5 5.8 C43.5 5.8 37.5 9.8 35.2 15.5 C33 14 30.5 13 27.5 13 C21 13 15.5 17.8 15 24 C10.5 25 7 28.5 7 33 C7 37.5 10.5 41 15 41 H87" fill="#ffffff" stroke="#173b39" stroke-width="2.8" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="cloud c4" aria-hidden="true">
+        <svg viewBox="0 0 88 38" fill="none">
+          <path d="M12 28 H76 C81 28 85 24 85 19.5 C85 15 81.5 11.5 77 11 C75.5 6 70.5 3 64.5 3 C61 3 58 4.5 56 6.8 C52.5 4.5 48 3.2 43 3.2 C36.5 3.2 31 6.8 29 11.8 C27 10.5 24.5 9.8 21.8 9.8 C15.5 9.8 10.5 14 10 19.5 C6 20.5 3 23.8 3 27.8 C3 31.8 6 35 10 35 H76" fill="#ffffff" stroke="#173b39" stroke-width="2.5" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <!-- 2. Radiant Illustrated Sun with Rotating Solar Rays -->
+      <div class="sun" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <!-- Rotating Solar Rays Group -->
+          <g class="sun-rays" stroke="#173b39" stroke-linecap="round">
+            <!-- 8 radiating rounded rays -->
+            <line x1="60" y1="8" x2="60" y2="20" stroke="#ffd45c" stroke-width="7" />
+            <line x1="60" y1="8" x2="60" y2="20" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="97" y1="23" x2="88" y2="32" stroke="#ffd45c" stroke-width="7" />
+            <line x1="97" y1="23" x2="88" y2="32" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="112" y1="60" x2="100" y2="60" stroke="#ffd45c" stroke-width="7" />
+            <line x1="112" y1="60" x2="100" y2="60" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="97" y1="97" x2="88" y2="88" stroke="#ffd45c" stroke-width="7" />
+            <line x1="97" y1="97" x2="88" y2="88" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="60" y1="112" x2="60" y2="100" stroke="#ffd45c" stroke-width="7" />
+            <line x1="60" y1="112" x2="60" y2="100" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="23" y1="97" x2="32" y2="88" stroke="#ffd45c" stroke-width="7" />
+            <line x1="23" y1="97" x2="32" y2="88" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="8" y1="60" x2="20" y2="60" stroke="#ffd45c" stroke-width="7" />
+            <line x1="8" y1="60" x2="20" y2="60" stroke="#173b39" stroke-width="2.5" />
+
+            <line x1="23" y1="23" x2="32" y2="32" stroke="#ffd45c" stroke-width="7" />
+            <line x1="23" y1="23" x2="32" y2="32" stroke="#173b39" stroke-width="2.5" />
+          </g>
+
+          <!-- Core Sun Disk & Warmth -->
+          <circle cx="60" cy="60" r="36" fill="#ffd45c" stroke="#173b39" stroke-width="3.5" />
+          <circle cx="60" cy="60" r="32" fill="#ffe37a" />
+
+          <!-- Cute Mario/Cozy Smiling Sun Face -->
+          <path d="M51 56 Q55 51 59 56" fill="none" stroke="#173b39" stroke-width="3" stroke-linecap="round" />
+          <path d="M69 56 Q73 51 77 56" fill="none" stroke="#173b39" stroke-width="3" stroke-linecap="round" />
+
+          <!-- Rosy Cheeks -->
+          <circle cx="49" cy="63" r="3.5" fill="#ff7048" opacity="0.55" />
+          <circle cx="79" cy="63" r="3.5" fill="#ff7048" opacity="0.55" />
+
+          <!-- Cheerful Smile -->
+          <path d="M59 64 Q64 70 69 64" fill="none" stroke="#173b39" stroke-width="2.8" stroke-linecap="round" />
+
+          <!-- Golden Sparkle Highlights -->
+          <circle cx="44" cy="42" r="2.5" fill="#ffffff" />
+          <circle cx="76" cy="42" r="1.8" fill="#ffffff" />
+        </svg>
+      </div>
+
+      <!-- 3. Flying Amazon Swallows (Andorinhas) -->
+      <div class="birds" aria-hidden="true">
+        <i class="bird b1">
+          <svg viewBox="0 0 32 18">
+            <path d="M2 13 C8 6 13 4 16 9 C19 4 24 6 30 13 C25 9.5 20 10.5 16 17 C12 10.5 7 9.5 2 13 Z" fill="#173b39" stroke="#173b39" stroke-width="1.2" stroke-linejoin="round" />
+          </svg>
+        </i>
+        <i class="bird b2">
+          <svg viewBox="0 0 32 18">
+            <path d="M2 13 C8 6 13 4 16 9 C19 4 24 6 30 13 C25 9.5 20 10.5 16 17 C12 10.5 7 9.5 2 13 Z" fill="#173b39" stroke="#173b39" stroke-width="1.2" stroke-linejoin="round" />
+          </svg>
+        </i>
+        <i class="bird b3">
+          <svg viewBox="0 0 32 18">
+            <path d="M2 13 C8 6 13 4 16 9 C19 4 24 6 30 13 C25 9.5 20 10.5 16 17 C12 10.5 7 9.5 2 13 Z" fill="#173b39" stroke="#173b39" stroke-width="1.2" stroke-linejoin="round" />
+          </svg>
+        </i>
+      </div>
+
+      <!-- 4. Main Title & Copy (Synchronized Impact) -->
+      <div class="hero-copy">
+        <div data-motion="pop-in" style="--delay: 0.25s;">
+          <span class="kicker">✦ Feito em Altamira–Pará ✦</span>
+        </div>
+        <h1 data-motion="fade-up" style="--delay: 0.35s;">
+          Soluções para nossa <span class="glow-accent">terrinha</span> ✦✦✦
+        </h1>
+        <p data-motion="fade-up" style="--delay: 0.45s;">
+          Iniciativas e tecnologias criadas no coração do Xingu para movimentar quem vive, planta, aprende e cuida da cidade.
+        </p>
+        
+        <div class="hero-actions" data-motion="fade-up" style="--delay: 0.55s;">
+          <a class="button" href="#mapa">Explorar Fases do Mapa ↓</a>
+          <a class="button light" href="#jogos">Testar Hexa Infinity ↗</a>
+        </div>
+      </div>
+
+      <!-- 5. Rural Countryside Landscape: Hills, Road, Farmhouses, Trees & Fence -->
+      <div class="hero-town" aria-hidden="true">
+        <!-- Distant Mountain Ridges -->
+        <div class="hill bg-a"></div>
+        <div class="hill bg-b"></div>
+
+        <!-- Foreground Rolling Hills -->
+        <div class="hill a"></div>
+        <div class="hill b"></div>
+        <div class="hill c"></div>
+
+        <!-- Winding Country Dirt Road -->
+        <svg class="farm-road" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <!-- Dirt Road Bed -->
+          <path d="M-20 170 C220 170 470 190 760 155 C1060 120 1280 145 1460 125 L1460 220 L-20 220 Z" fill="#edd6a4" />
+          <!-- Road Top Edge Outline -->
+          <path d="M-20 170 C220 170 470 190 760 155 C1060 120 1280 145 1460 125" fill="none" stroke="#173b39" stroke-width="4" stroke-linecap="round" />
+          <!-- Road Shading along edge -->
+          <path d="M-20 174 C220 174 470 194 760 159 C1060 124 1280 149 1460 129" fill="none" stroke="#d8be85" stroke-width="6" />
+          <!-- Wagon Wheel Track Ruts / Sandy path dashes -->
+          <path d="M-10 188 C240 182 490 198 780 170 C1080 138 1300 160 1460 143" fill="none" stroke="#e0c68d" stroke-width="5" stroke-dasharray="18 24" />
+          <path d="M10 204 C260 194 510 208 800 184 C1100 152 1320 174 1460 158" fill="none" stroke="#d5b87b" stroke-width="3" stroke-dasharray="28 36" />
+          <!-- Stepping Stones / Cobblestones along path -->
+          <g fill="#ecd8b1" stroke="#173b39" stroke-width="2">
+            <ellipse cx="140" cy="192" rx="9" ry="5" />
+            <ellipse cx="165" cy="198" rx="7" ry="4" />
+            <ellipse cx="380" cy="186" rx="8" ry="4.5" />
+            <ellipse cx="610" cy="178" rx="10" ry="5.5" />
+            <ellipse cx="635" cy="185" rx="7" ry="4" />
+            <ellipse cx="920" cy="158" rx="8" ry="4.5" />
+            <ellipse cx="1180" cy="150" rx="9" ry="5" />
+            <ellipse cx="1320" cy="142" rx="8" ry="4" />
+          </g>
+        </svg>
+
+        <!-- Wooden Country Fence -->
+        <div class="farm-fence">
+          <div class="fence-rail top"></div>
+          <div class="fence-rail bottom"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+          <div class="fence-post"></div>
+        </div>
+
+        <!-- Farm Cottages (Redesigned Handcrafted Vector Architecture - Inward Oriented) -->
+        <!-- House A: Casinha do Sítio (Cozy Farm Cottage - Facing Inward Right) -->
+        <div class="house ha" title="Casinha do Sítio · Altamira" role="img" aria-label="Casinha do sítio com chaminé e jardineira de flores">
+          <svg viewBox="0 0 110 110">
+            <!-- Animated Chimney Smoke Puffs (Rising on left side) -->
+            <g class="smoke-group">
+              <circle class="smoke-puff-1" cx="33" cy="8" r="4.5" fill="#f1fcfe" stroke="#173b39" stroke-width="2.5" />
+              <circle class="smoke-puff-2" cx="33" cy="8" r="6" fill="#f1fcfe" stroke="#173b39" stroke-width="2.5" />
+              <circle class="smoke-puff-3" cx="33" cy="8" r="7.5" fill="#f1fcfe" stroke="#173b39" stroke-width="2.5" />
+            </g>
+            
+            <g stroke="#173b39" stroke-linejoin="round">
+              <!-- Chimney on Left -->
+              <rect x="26" y="16" width="14" height="24" rx="2" fill="#ff7048" stroke-width="3" />
+              <rect x="23" y="14" width="20" height="5" rx="2" fill="#b87845" stroke-width="2.5" />
+              <line x1="26" y1="23" x2="40" y2="23" stroke="#d84b23" stroke-width="2" />
+              <line x1="26" y1="30" x2="40" y2="30" stroke="#d84b23" stroke-width="2" />
+
+              <!-- Ground Foundation Base -->
+              <rect x="18" y="94" width="74" height="6" rx="3" fill="#d99a34" stroke-width="3" />
+
+              <!-- Main House Body Walls -->
+              <rect x="22" y="52" width="66" height="42" rx="4" fill="#fff8e7" stroke-width="3.5" />
+              <!-- Horizontal Wooden Shiplap Siding lines -->
+              <line x1="23" y1="64" x2="87" y2="64" stroke="#e8dcbe" stroke-width="1.8" />
+              <line x1="23" y1="76" x2="87" y2="76" stroke="#e8dcbe" stroke-width="1.8" />
+              <line x1="23" y1="88" x2="87" y2="88" stroke="#e8dcbe" stroke-width="1.8" />
+
+              <!-- Main Lit Window with Blue Shutters & Flower Box (Left Side) -->
+              <!-- Left Shutter -->
+              <rect x="24" y="63" width="6" height="18" rx="2" fill="#43a9cf" stroke-width="2" />
+              <!-- Right Shutter -->
+              <rect x="50" y="63" width="6" height="18" rx="2" fill="#43a9cf" stroke-width="2" />
+              <!-- Warm Lit Window Glass -->
+              <rect class="window-glow" x="30" y="63" width="20" height="18" rx="2" fill="#ffd45c" stroke-width="2.8" />
+              <line x1="40" y1="63" x2="40" y2="81" stroke="#173b39" stroke-width="2" />
+              <line x1="30" y1="72" x2="50" y2="72" stroke="#173b39" stroke-width="2" />
+              
+              <!-- Flower Box -->
+              <rect x="26" y="81" width="28" height="6" rx="2" fill="#8e5836" stroke-width="2.2" />
+              <!-- Green Leaves & Cute Flowers -->
+              <path d="M28 81 Q32 76 36 81 Q40 75 44 81 Q48 76 52 81" fill="#6eb744" stroke="#173b39" stroke-width="1.8" />
+              <circle cx="32" cy="78" r="2.2" fill="#ef6f8f" stroke="#173b39" stroke-width="1" />
+              <circle cx="40" cy="77" r="2.2" fill="#ffffff" stroke="#173b39" stroke-width="1" />
+              <circle cx="48" cy="78" r="2.2" fill="#ffd45c" stroke="#173b39" stroke-width="1" />
+
+              <!-- Front Door (Right Side - Facing Inward to Farm) -->
+              <path d="M63 94 V66 Q63 61 72 61 Q81 61 81 66 V94 Z" fill="#b87845" stroke-width="3" />
+              <line x1="69" y1="63" x2="69" y2="94" stroke="#8e5836" stroke-width="1.8" />
+              <line x1="75" y1="63" x2="75" y2="94" stroke="#8e5836" stroke-width="1.8" />
+              <circle cx="66.5" cy="78" r="2.2" fill="#ffd45c" stroke-width="1.5" />
+              <!-- Door step -->
+              <rect x="61" y="93" width="22" height="3" rx="1.5" fill="#8e5836" stroke-width="1.8" />
+
+              <!-- Porch Lantern next to Door -->
+              <line x1="57" y1="67" x2="60" y2="67" stroke-width="1.8" />
+              <polygon points="58,69 62,69 61,74 59,74" fill="#ffd45c" stroke-width="1.5" />
+
+              <!-- Roof: Terracotta Gable with Trim and Tiles -->
+              <path d="M12 54 L55 18 L98 54 Z" fill="#ff7048" stroke-width="3.5" />
+              <!-- Roof Eaves Underside Shadow -->
+              <path d="M12 54 L17 58 L93 58 L98 54 Z" fill="#d84b23" stroke-width="2.5" />
+              <!-- Tile Lines -->
+              <path d="M26 44 L55 24 L84 44" fill="none" stroke="#d84b23" stroke-width="3" stroke-linecap="round" />
+              <path d="M20 50 L55 28 L90 50" fill="none" stroke="#fca183" stroke-width="2" stroke-linecap="round" />
+
+              <!-- Attic Round Window -->
+              <circle class="window-glow" cx="55" cy="38" r="7" fill="#ffd45c" stroke-width="2.8" />
+              <line x1="55" y1="31" x2="55" y2="45" stroke="#173b39" stroke-width="2.2" />
+              <line x1="48" y1="38" x2="62" y2="38" stroke="#173b39" stroke-width="2.2" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- House B: O Celeiro da Fazendinha (Country Barn) -->
+        <div class="house hb" title="Celeiro de Ideias · Pulso Dev" role="img" aria-label="Celeiro de fazenda com cata-vento de galinho e feno">
+          <svg viewBox="0 0 100 105">
+            <g stroke="#173b39" stroke-linejoin="round">
+              <!-- Barn Foundation -->
+              <rect x="15" y="93" width="70" height="6" rx="3" fill="#8e5836" stroke-width="3" />
+
+              <!-- Barn Red Body -->
+              <rect x="18" y="46" width="64" height="47" rx="3" fill="#d84b23" stroke-width="3.5" />
+              <!-- Vertical Plank Grooves -->
+              <line x1="28" y1="46" x2="28" y2="93" stroke="#b03212" stroke-width="2" />
+              <line x1="38" y1="46" x2="38" y2="93" stroke="#b03212" stroke-width="2" />
+              <line x1="62" y1="46" x2="62" y2="93" stroke="#b03212" stroke-width="2" />
+              <line x1="72" y1="46" x2="72" y2="93" stroke="#b03212" stroke-width="2" />
+
+              <!-- Gambrel Barn Roof (Double Pitch) -->
+              <path d="M50 15 L78 30 L88 48 L12 48 L22 30 Z" fill="#fff8e7" stroke-width="3.5" />
+              <path d="M12 48 L16 52 L84 52 L88 48 Z" fill="#eedcbb" stroke-width="2.2" />
+              <!-- Gambrel Roof Seams -->
+              <line x1="50" y1="15" x2="50" y2="48" stroke="#d5c7a5" stroke-width="2" />
+
+              <!-- Hay Loft Upper Door -->
+              <path d="M40 42 V31 Q40 26 50 26 Q60 26 60 31 V42 Z" fill="#6d3916" stroke-width="2.5" />
+              <!-- Hay / Palha spilling out of the loft -->
+              <path d="M42 40 Q48 46 45 49 Q51 43 54 48 Q55 42 58 40" fill="#ffd45c" stroke="#d99a34" stroke-width="2" stroke-linecap="round" />
+
+              <!-- Big Double Barn Doors with 'X' Bracing -->
+              <rect x="29" y="59" width="20" height="34" fill="#b87845" stroke-width="2.8" />
+              <line x1="30" y1="60" x2="48" y2="92" stroke="#fff8e7" stroke-width="2.8" stroke-linecap="round" />
+              <line x1="48" y1="60" x2="30" y2="92" stroke="#fff8e7" stroke-width="2.8" stroke-linecap="round" />
+
+              <rect x="51" y="59" width="20" height="34" fill="#b87845" stroke-width="2.8" />
+              <line x1="52" y1="60" x2="70" y2="92" stroke="#fff8e7" stroke-width="2.8" stroke-linecap="round" />
+              <line x1="70" y1="60" x2="52" y2="92" stroke="#fff8e7" stroke-width="2.8" stroke-linecap="round" />
+
+              <!-- Door Handles -->
+              <circle cx="46" cy="76" r="2" fill="#ffd45c" stroke-width="1.5" />
+              <circle cx="54" cy="76" r="2" fill="#ffd45c" stroke-width="1.5" />
+
+              <!-- Weathervane (Cata-vento de Galinho) with Sway Animation -->
+              <g class="weathervane-sway">
+                <line x1="50" y1="15" x2="50" y2="4" stroke-width="2.5" />
+                <line x1="43" y1="9" x2="57" y2="9" stroke-width="2" />
+                <!-- Rooster Silhouette -->
+                <path d="M48 6 Q50 3 53 5 L55 2 Q52 1 50 3 Q48 1 45 4 Z" fill="#ffd45c" stroke-width="1.8" />
+              </g>
+
+              <!-- Rustic Wooden Milk Can / Barrel beside Barn -->
+              <rect x="74" y="80" width="10" height="13" rx="2" fill="#b87845" stroke-width="2.2" />
+              <line x1="74" y1="84" x2="84" y2="84" stroke="#173b39" stroke-width="1.8" />
+              <line x1="74" y1="89" x2="84" y2="89" stroke="#173b39" stroke-width="1.8" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- House C: Chalé Ribeirinho (River Chalet - Facing Inward Left) -->
+        <div class="house hc" title="Chalé Ribeirinho · Beira do Xingu" role="img" aria-label="Chalé ribeirinho de madeira com varanda e chaminé de pedra">
+          <svg viewBox="0 0 115 110">
+            <!-- Animated Stone Chimney Smoke Puffs (Rising on right side) -->
+            <g class="smoke-group">
+              <circle class="smoke-puff-1" cx="85" cy="7" r="4" fill="#f1fcfe" stroke="#173b39" stroke-width="2.2" />
+              <circle class="smoke-puff-2" cx="85" cy="7" r="5.5" fill="#f1fcfe" stroke="#173b39" stroke-width="2.2" />
+              <circle class="smoke-puff-3" cx="85" cy="7" r="7" fill="#f1fcfe" stroke="#173b39" stroke-width="2.2" />
+            </g>
+
+            <g stroke="#173b39" stroke-linejoin="round">
+              <!-- Stone Chimney on Right -->
+              <rect x="78" y="16" width="14" height="26" rx="2" fill="#7f72d8" stroke-width="3" />
+              <rect x="75" y="13" width="20" height="5" rx="2" fill="#5c50b5" stroke-width="2.2" />
+              <!-- Cobblestones in Chimney -->
+              <circle cx="82" cy="22" r="2.2" fill="#5c50b5" stroke="none" />
+              <circle cx="87" cy="28" r="2.5" fill="#5c50b5" stroke="none" />
+              <circle cx="82" cy="35" r="2" fill="#5c50b5" stroke="none" />
+
+              <!-- Foundation & Stilts Base (Palafita / Madeira Ribeirinha) -->
+              <rect x="14" y="93" width="86" height="7" rx="3" fill="#6d3916" stroke-width="3" />
+              <rect x="20" y="97" width="6" height="6" fill="#b87845" stroke-width="2" />
+              <rect x="54" y="97" width="6" height="6" fill="#b87845" stroke-width="2" />
+              <rect x="88" y="97" width="6" height="6" fill="#b87845" stroke-width="2" />
+
+              <!-- Chalet Main Body Walls (Warm Golden Timber) -->
+              <rect x="20" y="48" width="74" height="45" rx="4" fill="#d99a34" stroke-width="3.5" />
+              <!-- Horizontal Log / Plank Siding -->
+              <line x1="21" y1="58" x2="93" y2="58" stroke="#b57a22" stroke-width="1.8" />
+              <line x1="21" y1="68" x2="93" y2="68" stroke="#b57a22" stroke-width="1.8" />
+              <line x1="21" y1="78" x2="93" y2="78" stroke="#b57a22" stroke-width="1.8" />
+              <line x1="21" y1="88" x2="93" y2="88" stroke="#b57a22" stroke-width="1.8" />
+
+              <!-- Front Porch on Left (Inward Facing to Farm) -->
+              <!-- Porch Awning / Eaves -->
+              <path d="M18 62 L62 62 L59 67 L21 67 Z" fill="#b87845" stroke-width="2.2" />
+              <!-- Porch Posts -->
+              <rect x="23" y="66" width="4" height="27" fill="#fff8e7" stroke-width="2" />
+              <rect x="56" y="66" width="4" height="27" fill="#fff8e7" stroke-width="2" />
+              <!-- Porch Handrail and Balusters -->
+              <line x1="23" y1="81" x2="57" y2="81" stroke="#173b39" stroke-width="2.2" />
+              <line x1="31" y1="81" x2="31" y2="93" stroke="#173b39" stroke-width="1.8" />
+              <line x1="39" y1="81" x2="39" y2="93" stroke="#173b39" stroke-width="1.8" />
+              <line x1="47" y1="81" x2="47" y2="93" stroke="#173b39" stroke-width="1.8" />
+
+              <!-- Front Door under Porch -->
+              <rect x="32" y="66" width="16" height="27" rx="2" fill="#fff8e7" stroke-width="2.5" />
+              <circle cx="40" cy="73" r="3" fill="#ffd45c" stroke-width="1.8" />
+              <circle cx="44" cy="80" r="1.5" fill="#d99a34" stroke-width="1.2" />
+              <!-- Porch Step -->
+              <rect x="28" y="93" width="22" height="3" rx="1.5" fill="#b87845" stroke-width="1.8" />
+
+              <!-- Hanging Plant / Samambaia on Porch -->
+              <line x1="51" y1="66" x2="51" y2="70" stroke-width="1.5" />
+              <path d="M47 70 Q51 74 55 70 Z" fill="#8e5836" stroke-width="1.6" />
+              <path d="M45 69 Q49 66 53 69 Q55 67 57 70 Q53 73 50 71" fill="#6eb744" stroke="#173b39" stroke-width="1.4" />
+
+              <!-- Cozy Window on Right with Curtains & Light -->
+              <rect class="window-glow" x="66" y="62" width="22" height="22" rx="3" fill="#ffd45c" stroke-width="2.8" />
+              <line x1="77" y1="62" x2="77" y2="84" stroke="#173b39" stroke-width="2" />
+              <line x1="66" y1="73" x2="88" y2="73" stroke="#173b39" stroke-width="2" />
+              <!-- Cozy Orange Curtains -->
+              <path d="M68 63 Q72 70 68 77 M86 63 Q82 70 86 77" fill="none" stroke="#ff7048" stroke-width="2" stroke-linecap="round" />
+
+              <!-- Steep Chalet Gable Roof with River Teal Shingles -->
+              <path d="M10 52 L57 16 L104 52 Z" fill="#3c92ca" stroke-width="3.5" />
+              <path d="M10 52 L15 56 L99 56 L104 52 Z" fill="#277b9d" stroke-width="2.5" />
+              <!-- Teal Roof Shingle Lines -->
+              <path d="M25 42 L57 24 L89 42" fill="none" stroke="#277b9d" stroke-width="3" stroke-linecap="round" />
+              <path d="M18 48 L57 28 L96 48" fill="none" stroke="#71b8e8" stroke-width="2" stroke-linecap="round" />
+
+              <!-- Decorative Timber Truss on Gable Apex -->
+              <path d="M57 18 V29 M47 29 H67 M49 23 L57 29 L65 23" fill="none" stroke="#fff8e7" stroke-width="2.2" stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Handcrafted Vector Trees -->
+        <!-- Tree 1: Amazonian Fruit Tree (Left Framing) -->
+        <div class="tree t1" role="img" aria-label="Árvore frutífera com frutos dourados">
+          <svg viewBox="0 0 112 142">
+            <!-- Wooden Trunk with Bark -->
+            <path d="M47 82 L42 136 C42 138 35 141 32 142 L78 142 C75 141 68 138 68 136 L63 82 Z" fill="#b87845" stroke="#173b39" stroke-width="3.5" stroke-linejoin="round" />
+            <line x1="52" y1="92" x2="50" y2="135" stroke="#8e5836" stroke-width="2" stroke-linecap="round" />
+            <line x1="59" y1="88" x2="61" y2="133" stroke="#8e5836" stroke-width="2" stroke-linecap="round" />
+            
+            <!-- Lush Tiered Foliage Canopy with Sway -->
+            <g class="tree-canopy" stroke="#173b39" stroke-width="3.5" stroke-linejoin="round">
+              <!-- Darker under-canopy depth -->
+              <ellipse cx="55" cy="62" rx="46" ry="38" fill="#2d7c3e" />
+              <!-- Mid-tone green foliage clouds -->
+              <circle cx="34" cy="58" r="25" fill="#3ea154" />
+              <circle cx="76" cy="58" r="25" fill="#3ea154" />
+              <circle cx="55" cy="40" r="30" fill="#4eb364" />
+              <circle cx="38" cy="38" r="20" fill="#5fc274" />
+              <circle cx="70" cy="36" r="22" fill="#5fc274" />
+              <circle cx="54" cy="24" r="18" fill="#6ecf82" />
+
+              <!-- Little Ripe Golden/Orange Fruits with Catchlights -->
+              <circle cx="32" cy="48" r="5" fill="#ffd45c" stroke-width="2" />
+              <circle cx="30.5" cy="46.5" r="1.5" fill="#ffffff" stroke="none" />
+              <circle cx="78" cy="46" r="5" fill="#ffd45c" stroke-width="2" />
+              <circle cx="76.5" cy="44.5" r="1.5" fill="#ffffff" stroke="none" />
+              <circle cx="48" cy="30" r="4.5" fill="#ff7048" stroke-width="2" />
+              <circle cx="46.5" cy="28.5" r="1.5" fill="#ffffff" stroke="none" />
+              <circle cx="68" cy="28" r="4.5" fill="#ffd45c" stroke-width="2" />
+              <circle cx="56" cy="54" r="5" fill="#ff7048" stroke-width="2" />
+              <circle cx="54.5" cy="52.5" r="1.5" fill="#ffffff" stroke="none" />
+              <circle cx="86" cy="64" r="4.5" fill="#ffd45c" stroke-width="2" />
+              <circle cx="22" cy="64" r="4.5" fill="#ff7048" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Tree 2: Tall Shaded Forest Tree (Right Framing) -->
+        <div class="tree t2" role="img" aria-label="Árvore frondosa alta">
+          <svg viewBox="0 0 108 138">
+            <!-- Wooden Trunk & Branch Division -->
+            <path d="M46 76 L40 134 C40 136 33 138 30 138 L76 138 C73 138 66 136 66 134 L60 76 Z" fill="#b87845" stroke="#173b39" stroke-width="3.5" stroke-linejoin="round" />
+            <path d="M44 76 Q35 60 26 56" fill="none" stroke="#8e5836" stroke-width="3.5" stroke-linecap="round" />
+            <path d="M62 76 Q71 60 80 56" fill="none" stroke="#8e5836" stroke-width="3.5" stroke-linecap="round" />
+            <line x1="53" y1="84" x2="52" y2="132" stroke="#8e5836" stroke-width="2" stroke-linecap="round" />
+
+            <!-- Tiered Forest Canopy with Sway -->
+            <g class="tree-canopy" stroke="#173b39" stroke-width="3.5" stroke-linejoin="round">
+              <ellipse cx="53" cy="66" rx="45" ry="26" fill="#296b36" />
+              <ellipse cx="53" cy="46" rx="38" ry="24" fill="#3a8a4b" />
+              <ellipse cx="53" cy="26" rx="28" ry="20" fill="#4da45e" />
+              <!-- Leaf Highlight Tufts -->
+              <path d="M38 44 Q44 38 50 44 M56 42 Q62 36 68 42 M44 24 Q50 18 56 24" fill="none" stroke="#68c07a" stroke-width="2.5" stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Tree 3: Midground Orchard Tree (Right Center) -->
+        <div class="tree t3" role="img" aria-label="Pomar florido em segundo plano">
+          <svg viewBox="0 0 78 102">
+            <path d="M35 56 L30 100 C30 101 26 102 24 102 L54 102 C52 102 48 101 48 100 L43 56 Z" fill="#b87845" stroke="#173b39" stroke-width="3" stroke-linejoin="round" />
+            <g class="tree-canopy" stroke="#173b39" stroke-width="3" stroke-linejoin="round">
+              <ellipse cx="39" cy="40" rx="32" ry="28" fill="#3ea154" />
+              <circle cx="28" cy="36" r="18" fill="#52b868" />
+              <circle cx="50" cy="36" r="18" fill="#52b868" />
+              <circle cx="39" cy="24" r="18" fill="#66cc7c" />
+
+              <!-- Blossom Dots -->
+              <circle cx="28" cy="30" r="3" fill="#ffffff" stroke-width="1.5" />
+              <circle cx="28" cy="30" r="1" fill="#ffd45c" stroke="none" />
+              <circle cx="50" cy="28" r="3" fill="#ffffff" stroke-width="1.5" />
+              <circle cx="50" cy="28" r="1" fill="#ffd45c" stroke="none" />
+              <circle cx="38" cy="42" r="3" fill="#ff7048" stroke-width="1.5" />
+              <circle cx="38" cy="42" r="1" fill="#ffd45c" stroke="none" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Tree 4: Sapling Fruit Tree (Left Center) -->
+        <div class="tree t4" role="img" aria-label="Muda de pomar verdejante">
+          <svg viewBox="0 0 70 92">
+            <path d="M32 50 L28 90 C28 91 25 92 23 92 L47 92 C45 92 42 91 42 90 L38 50 Z" fill="#b87845" stroke="#173b39" stroke-width="2.8" stroke-linejoin="round" />
+            <g class="tree-canopy" stroke="#173b39" stroke-width="2.8" stroke-linejoin="round">
+              <ellipse cx="35" cy="36" rx="27" ry="24" fill="#39964d" />
+              <circle cx="26" cy="32" r="15" fill="#4eb363" />
+              <circle cx="44" cy="32" r="15" fill="#4eb363" />
+              <circle cx="35" cy="22" r="16" fill="#62c778" />
+
+              <circle cx="26" cy="25" r="3" fill="#ffd45c" stroke-width="1.5" />
+              <circle cx="43" cy="24" r="3" fill="#ffd45c" stroke-width="1.5" />
+              <circle cx="35" cy="38" r="3" fill="#ff7048" stroke-width="1.5" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Ambient Meadow Wildflowers & Grass Tufts -->
+        <svg class="meadow-flowers" viewBox="0 0 1440 52" preserveAspectRatio="xMidYMax slice">
+          <g stroke="#173b39" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Grass Tufts Left (Near Cottage) -->
+            <path d="M70 50 Q74 28 80 50 M75 50 Q81 22 88 50 M83 50 Q90 30 96 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <!-- Pink Poppy -->
+            <g transform="translate(86, 26)">
+              <circle cx="-3" cy="-2" r="3.5" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3" cy="-2" r="3.5" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="2" r="3.5" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="2.5" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <!-- Grass Tufts (Between House A and B) -->
+            <path d="M260 50 Q265 26 273 50 M269 50 Q277 20 285 50 M280 50 Q288 28 295 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <!-- White Daisy -->
+            <g transform="translate(276, 22)">
+              <circle cx="0" cy="-4" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="3" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <!-- Grass Tufts & Daisies (Center Meadow, near Cow & Chicken) -->
+            <path d="M490 50 Q495 28 503 50 M499 50 Q507 20 516 50 M510 50 Q518 29 525 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <!-- Golden Buttercup -->
+            <g transform="translate(506, 23)">
+              <circle cx="0" cy="-3.5" r="3.2" fill="#ffd45c" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3.5" cy="-1" r="3.2" fill="#ffd45c" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="2.2" cy="3" r="3.2" fill="#ffd45c" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-2.2" cy="3.2" r="3.2" fill="#ffd45c" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-3.5" cy="-1" r="3.2" fill="#ffd45c" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="2.8" fill="#ff7048" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <path d="M710 50 Q715 28 723 50 M719 50 Q727 20 735 50 M730 50 Q737 29 744 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <!-- White Daisy -->
+            <g transform="translate(727, 24)">
+              <circle cx="0" cy="-4" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="3" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <!-- Grass Tufts (Near Dog & Chalet) -->
+            <path d="M960 50 Q965 27 973 50 M969 50 Q977 19 986 50 M980 50 Q987 29 994 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <!-- Purple Lavender / Orchid Wildflower -->
+            <g transform="translate(976, 22)">
+              <circle cx="-3" cy="-2" r="3.2" fill="#b388ff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3" cy="-2" r="3.2" fill="#b388ff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="2" r="3.2" fill="#b388ff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="2.5" fill="#ffffff" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <!-- Grass Tufts Right (Far Right Framing) -->
+            <path d="M1240 50 Q1245 27 1253 50 M1249 50 Q1257 20 1266 50 M1260 50 Q1267 29 1274 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <g transform="translate(1256, 24)">
+              <circle cx="0" cy="-4" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-2.4" cy="3.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="-3.8" cy="-1.2" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="3" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+
+            <path d="M1370 50 Q1375 27 1383 50 M1379 50 Q1387 19 1395 50" fill="none" stroke="#6eb744" stroke-width="3" />
+            <g transform="translate(1385, 23)">
+              <circle cx="-3" cy="-2" r="3.2" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="3" cy="-2" r="3.2" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="2" r="3.2" fill="#ef6f8f" stroke="#173b39" stroke-width="1.5" />
+              <circle cx="0" cy="0" r="2.5" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <!-- 6. Farm Animals (Redesigned Handcrafted Vector Characters) -->
+      <div class="hero-fauna" aria-hidden="true">
+        <!-- Cow (Mimosa / Pintada) -->
+        <span class="animal cow" title="Muuu! · Vaquinha da Terrinha" role="img" aria-label="Vaquinha mimosa malhada com sino dourado e trevo">
+          <svg viewBox="0 0 120 90">
+            <g stroke="#173b39" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Tail (Behind body) -->
+              <path class="cow-tail" d="M22 40 Q10 38 12 55 Q13 62 10 68" fill="none" stroke-width="3" />
+              <path d="M10 66 Q6 71 11 74 Q15 71 12 67 Z" fill="#173b39" stroke-width="2" />
+
+              <!-- Back Left Leg -->
+              <rect x="25" y="50" width="12" height="26" rx="4" fill="#eddcc2" stroke-width="3" />
+              <path d="M25 70 h12 v6 h-12 Z" fill="#173b39" stroke="none" />
+              <!-- Back Right Leg -->
+              <rect x="42" y="50" width="12" height="25" rx="4" fill="#eddcc2" stroke-width="3" />
+              <path d="M42 69 h12 v6 h-12 Z" fill="#173b39" stroke="none" />
+
+              <!-- Fore Left Leg -->
+              <rect x="67" y="50" width="12" height="26" rx="4" fill="#fff8e7" stroke-width="3.5" />
+              <path d="M67 70 h12 v6 h-12 Z" fill="#173b39" stroke="none" />
+              <!-- Fore Right Leg -->
+              <rect x="83" y="50" width="12" height="26" rx="4" fill="#fff8e7" stroke-width="3.5" />
+              <path d="M83 70 h12 v6 h-12 Z" fill="#173b39" stroke="none" />
+
+              <!-- Cow Plump Body -->
+              <rect x="18" y="24" width="76" height="38" rx="19" fill="#fff8e7" stroke-width="3.5" />
+
+              <!-- Spots on Body -->
+              <path d="M30 24 C36 26 42 32 39 40 C32 42 25 38 23 30 C25 25 28 24 30 24 Z" fill="#173b39" stroke="none" />
+              <path d="M54 34 C62 31 68 38 65 46 C58 52 50 48 49 42 C49 36 52 35 54 34 Z" fill="#173b39" stroke="none" />
+              <path d="M19 42 C23 44 24 52 19 56 C18 52 18 46 19 42 Z" fill="#173b39" stroke="none" />
+
+              <!-- Rosy Udder -->
+              <path d="M36 62 Q41 66 46 62" fill="#fbb29e" stroke-width="2.5" />
+
+              <!-- Collar & Shiny Cowbell -->
+              <path d="M82 30 L88 46" stroke="#ff7048" stroke-width="4.5" />
+              <polygon points="85,44 91,44 93,51 83,51" fill="#ffd45c" stroke-width="2" />
+              <circle cx="88" cy="51" r="1.5" fill="#173b39" stroke="none" />
+
+              <!-- Cow Head & Expressive Features -->
+              <!-- Horns -->
+              <path d="M87 17 Q82 9 88 6 Q91 10 91 15" fill="#ffd45c" stroke-width="2.2" />
+              <path d="M103 17 Q108 9 102 6 Q99 10 99 15" fill="#ffd45c" stroke-width="2.2" />
+
+              <!-- Soft Ears -->
+              <path d="M82 21 Q72 22 75 27 Q80 29 84 24" fill="#fff8e7" stroke-width="2.5" />
+              <path d="M78 23 Q75 24 76 26 Q79 27 81 25" fill="#fbb29e" stroke="none" />
+              <path d="M107 21 Q117 22 114 27 Q109 29 105 24" fill="#fff8e7" stroke-width="2.5" />
+              <path d="M111 23 Q114 24 113 26 Q110 27 108 25" fill="#fbb29e" stroke="none" />
+
+              <!-- Head Base Circle -->
+              <circle cx="95" cy="26" r="15" fill="#fff8e7" stroke-width="3.5" />
+              <!-- Eye Patch -->
+              <path d="M86 15 C90 13 96 15 97 21 C96 27 88 27 84 23 C82 17 84 16 86 15 Z" fill="#173b39" stroke="none" />
+
+              <!-- Eyes with Catchlights -->
+              <circle cx="91" cy="22" r="2.8" fill="#173b39" stroke="none" />
+              <circle cx="90.2" cy="21.2" r="1" fill="#ffffff" stroke="none" />
+              <circle cx="103" cy="22" r="2.8" fill="#173b39" stroke="none" />
+              <circle cx="102.2" cy="21.2" r="1" fill="#ffffff" stroke="none" />
+
+              <!-- Cute Snout & Smile -->
+              <ellipse cx="96" cy="33" rx="11" ry="8" fill="#fbb29e" stroke-width="3" />
+              <ellipse cx="92" cy="32" rx="1.8" ry="1.2" fill="#173b39" stroke="none" />
+              <ellipse cx="100" cy="32" rx="1.8" ry="1.2" fill="#173b39" stroke="none" />
+              <path d="M93 36 Q96 39 99 36" fill="none" stroke-width="2" />
+
+              <!-- Rosy Cheeks -->
+              <circle cx="85" cy="30" r="2.5" fill="#ef6f8f" opacity="0.45" stroke="none" />
+              <circle cx="107" cy="30" r="2.5" fill="#ef6f8f" opacity="0.45" stroke="none" />
+
+              <!-- Green Grass Sprig with Flower in Mouth -->
+              <path d="M88 37 Q82 41 77 39" fill="none" stroke="#6eb744" stroke-width="2.2" />
+              <circle cx="76" cy="38" r="2.5" fill="#6eb744" stroke="none" />
+              <circle cx="78" cy="41" r="2" fill="#ffd45c" stroke="none" />
+
+              <!-- Grass Tufts at Hooves -->
+              <path d="M21 76 Q24 71 27 76 M69 76 Q72 71 75 76 M89 76 Q92 71 95 76" fill="none" stroke="#6eb744" stroke-width="2.2" />
+            </g>
+          </svg>
+        </span>
+
+        <!-- Chicken (Giselda / Cocoricó) -->
+        <span class="animal chicken" title="Có-có! · Galinha Caipira" role="img" aria-label="Galinha caipira gordinha ciscando milho">
+          <svg viewBox="0 0 74 76">
+            <g stroke="#173b39" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Tail Feathers -->
+              <path d="M18 36 Q7 30 9 22 Q16 25 21 32" fill="#ffd45c" stroke-width="2.8" />
+              <path d="M16 40 Q5 38 7 30 Q14 31 18 38" fill="#ff7048" stroke-width="2.5" />
+
+              <!-- Feet with Claws -->
+              <path d="M27 56 V67 M21 67 L33 67 M23 64 L27 67" stroke="#d99a34" stroke-width="3" />
+              <path d="M41 56 V67 M35 67 L47 67 M37 64 L41 67" stroke="#d99a34" stroke-width="3" />
+
+              <!-- Plump Chicken Body -->
+              <circle cx="34" cy="42" r="20" fill="#fff8e7" stroke-width="3.5" />
+
+              <!-- Wing with Feather Scallops -->
+              <path d="M22 36 Q34 32 38 42 Q36 52 24 50 Q18 44 22 36 Z" fill="#ffd45c" stroke-width="3" />
+              <path d="M26 42 Q32 38 34 44 M26 46 Q30 43 32 47" fill="none" stroke="#d99a34" stroke-width="2" />
+
+              <!-- Chicken Head -->
+              <circle cx="48" cy="24" r="14" fill="#fff8e7" stroke-width="3.5" />
+
+              <!-- Red Comb on Head -->
+              <path d="M42 12 Q45 4 49 11 Q54 5 57 12 Q61 8 62 15" fill="#ff7048" stroke-width="2.8" />
+
+              <!-- Wattle under Beak -->
+              <path d="M57 32 Q59 38 55 38 Q52 38 54 32 Z" fill="#ff7048" stroke-width="2" />
+
+              <!-- Golden Beak -->
+              <path d="M57 23 L68 27 L57 31 Z" fill="#ffd45c" stroke-width="2.8" />
+              <line x1="57" y1="27" x2="65" y2="27" stroke="#d99a34" stroke-width="1.8" />
+
+              <!-- Eye with Catchlight -->
+              <circle cx="51" cy="21" r="2.8" fill="#173b39" stroke="none" />
+              <circle cx="50.2" cy="20.2" r="1" fill="#ffffff" stroke="none" />
+
+              <!-- Rosy Cheek Blush -->
+              <circle cx="47" cy="28" r="3" fill="#ef6f8f" opacity="0.45" stroke="none" />
+
+              <!-- Corn / Grain Seeds on the Ground -->
+              <circle cx="62" cy="68" r="2" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+              <circle cx="67" cy="67" r="1.6" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+              <circle cx="65" cy="71" r="1.8" fill="#ffd45c" stroke="#173b39" stroke-width="1.2" />
+            </g>
+          </svg>
+        </span>
+
+        <!-- Dog (Caramelo da Fazenda) -->
+        <span class="animal dog" title="Au au! · Caramelo da Fazenda" role="img" aria-label="Cachorrinho caramelo alegre abanando o rabo com linguinha para fora">
+          <svg viewBox="0 0 100 80">
+            <g stroke="#173b39" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Wagging Tail -->
+              <g class="dog-tail-group">
+                <path d="M22 36 Q10 26 14 14 Q16 12 18 15 Q14 24 24 32" fill="#d99355" stroke-width="3.5" />
+                <path d="M15 15 Q18 12 19 16" fill="#fff8e7" stroke="none" />
+              </g>
+
+              <!-- Hind Left Leg & Paw -->
+              <rect x="25" y="46" width="10" height="24" rx="4" fill="#b87845" stroke-width="3" />
+              <ellipse cx="29" cy="69" rx="6" ry="3.5" fill="#fff8e7" stroke-width="2.5" />
+              <!-- Hind Right Leg & Paw -->
+              <rect x="39" y="46" width="10" height="23" rx="4" fill="#b87845" stroke-width="3" />
+              <ellipse cx="43" cy="68" rx="6" ry="3.5" fill="#fff8e7" stroke-width="2.5" />
+
+              <!-- Fore Left Leg & Paw -->
+              <rect x="58" y="46" width="10" height="24" rx="4" fill="#d99355" stroke-width="3.5" />
+              <ellipse cx="62" cy="69" rx="6.2" ry="3.5" fill="#fff8e7" stroke-width="2.5" />
+              <!-- Fore Right Leg & Paw -->
+              <rect x="72" y="46" width="10" height="24" rx="4" fill="#d99355" stroke-width="3.5" />
+              <ellipse cx="76" cy="69" rx="6.2" ry="3.5" fill="#fff8e7" stroke-width="2.5" />
+
+              <!-- Caramel Body -->
+              <rect x="20" y="28" width="56" height="30" rx="15" fill="#d99355" stroke-width="3.5" />
+              <!-- Cream Chest Patch -->
+              <path d="M46 42 Q56 44 68 34 Q72 42 68 54 Q56 58 46 52 Z" fill="#fff8e7" stroke="none" />
+
+              <!-- River Blue Collar & Gold Tag -->
+              <path d="M68 31 L73 45" stroke="#43a9cf" stroke-width="4.5" />
+              <circle cx="73" cy="46" r="2.8" fill="#ffd45c" stroke-width="1.8" />
+
+              <!-- Dog Head Group -->
+              <!-- Back Ear -->
+              <path d="M68 17 Q62 5 69 3 Q75 5 74 15" fill="#b86b2b" stroke-width="2.5" />
+              <!-- Head Base Circle -->
+              <circle cx="76" cy="26" r="15" fill="#d99355" stroke-width="3.5" />
+
+              <!-- White Muzzle Patch -->
+              <ellipse cx="84" cy="31" rx="7.5" ry="6" fill="#fff8e7" stroke-width="2.5" />
+
+              <!-- Button Nose -->
+              <ellipse cx="88" cy="29" rx="2.5" ry="2" fill="#173b39" stroke="none" />
+
+              <!-- Mouth & Cute Pink Tongue -->
+              <path d="M84 33 Q86 36 89 33" fill="none" stroke-width="2" />
+              <path d="M85 34 Q86 40 89 37 Q89 34 87 34 Z" fill="#ef6f8f" stroke-width="1.5" />
+
+              <!-- Eye with Catchlight -->
+              <circle cx="78" cy="22" r="2.8" fill="#173b39" stroke="none" />
+              <circle cx="77.2" cy="21.2" r="1" fill="#ffffff" stroke="none" />
+
+              <!-- Front Floppy Ear -->
+              <path d="M82 16 Q92 9 93 17 Q93 27 86 27 Q83 25 84 19" fill="#b86b2b" stroke-width="3" />
+              <path d="M85 19 Q89 15 90 21" fill="#d99355" stroke="none" />
+
+              <!-- Rosy Cheek Blush -->
+              <circle cx="73" cy="30" r="2.5" fill="#ef6f8f" opacity="0.45" stroke="none" />
+
+              <!-- Grass Tufts at Paws -->
+              <path d="M22 71 Q25 67 28 71 M66 71 Q69 67 72 71" fill="none" stroke="#6eb744" stroke-width="2.2" />
+            </g>
+          </svg>
+        </span>
+
+        <!-- Flitting Cozy Butterfly -->
+        <span class="butterfly" role="img" aria-label="Borboleta colorida sobrevoando as flores">
+          <svg viewBox="0 0 28 24">
+            <g stroke="#173b39" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Left Wing -->
+              <g class="butterfly-wing-left">
+                <path d="M13 11 C8 3 2 5 2 11 C2 15 8 16 13 12 Z" fill="#ffd45c" stroke-width="2" />
+                <circle cx="7" cy="10" r="2" fill="#ff7048" stroke="none" />
+              </g>
+              <!-- Right Wing -->
+              <g class="butterfly-wing-right">
+                <path d="M15 11 C20 3 26 5 26 11 C26 15 20 16 15 12 Z" fill="#ffd45c" stroke-width="2" />
+                <circle cx="21" cy="10" r="2" fill="#ff7048" stroke="none" />
+              </g>
+              <!-- Body & Antennae -->
+              <ellipse cx="14" cy="12" rx="2" ry="6" fill="#173b39" stroke="none" />
+              <path d="M13 7 Q11 4 9 4 M15 7 Q17 4 19 4" fill="none" stroke="#173b39" stroke-width="1.5" />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: OVERWORLD MAP — "NOSSO MAPA DE IDEIAS" (Sequential Stage Drops)
+         ====================================================================== -->
+    <section class="world" id="mapa">
+      <!-- HUD status bar (Drops in) -->
+      <div class="map-hud" data-motion="fade-down" style="--delay: 0.1s;">
+        <span class="live-dot"></span>
+        <span>Mundo 1 · Altamira & Xingu</span>
+        <span style="color:#ffffff77">|</span>
+        <span>★ 5 Fases Disponíveis</span>
+      </div>
+
+      <div class="map-title" data-motion="fade-up" style="--delay: 0.2s;">
+        <span class="kicker">Altamira vista do alto</span>
+        <h2>Nosso mapa de ideias</h2>
+        <p>Um mapa afetivo e gamificado inspirado na cidade entre o Xingu, os igarapés, a Transamazônica e as pontes entre campo e floresta.</p>
+      </div>
+
+      <!-- Territorial Overworld SVG Canvas (Logical & Culturally Faithful Map of Altamira-PA) -->
+      <svg class="altamira-map" viewBox="0 0 1440 1850" preserveAspectRatio="none" aria-label="Mapa ilustrado e lógico do Overworld de Altamira junto ao Rio Xingu">
+        <defs>
+          <!-- Water & Environment Gradients -->
+          <linearGradient id="xinguGrad" x1="10%" y1="0%" x2="100%" y2="85%">
+            <stop offset="0%" stop-color="#3aaecb"/>
+            <stop offset="40%" stop-color="#2a8fae"/>
+            <stop offset="100%" stop-color="#1f718c"/>
+          </linearGradient>
+
+          <linearGradient id="sandGrad" x1="0%" y1="0%" x2="100%" y2="60%">
+            <stop offset="0%" stop-color="#fef5d6"/>
+            <stop offset="60%" stop-color="#f6dfa2"/>
+            <stop offset="100%" stop-color="#e2c580"/>
+          </linearGradient>
+
+          <linearGradient id="igarapeGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+            <stop offset="0%" stop-color="#5ec5df"/>
+            <stop offset="60%" stop-color="#42a9c3"/>
+            <stop offset="100%" stop-color="#2d8ea8"/>
+          </linearGradient>
+
+          <radialGradient id="padGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="45%" stop-color="#fffbee"/>
+            <stop offset="85%" stop-color="#f4ecd6"/>
+            <stop offset="100%" stop-color="#dfd2b1"/>
+          </radialGradient>
+
+          <!-- River Wave Ripples -->
+          <pattern id="xinguWaves" width="56" height="24" patternUnits="userSpaceOnUse">
+            <path d="M4 14 Q18 6 32 14 T60 14" fill="none" stroke="#dcf8fa" stroke-width="2.4" opacity="0.6" stroke-linecap="round"/>
+          </pattern>
+
+          <!-- Agricultural Crop Furrows (Roça de Mandioca & Hortaliças) -->
+          <pattern id="cropFurrows" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(24)">
+            <line x1="0" y1="9" x2="34" y2="9" stroke="#48942b" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="6 4"/>
+            <line x1="0" y1="25" x2="34" y2="25" stroke="#48942b" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="6 4"/>
+          </pattern>
+
+          <!-- Cacao Trees Pattern (Cacau da Transamazônica) -->
+          <pattern id="cacaoTrees" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="14" cy="14" r="5" fill="#2d6e32" stroke="#173b39" stroke-width="1.8"/>
+            <circle cx="5" cy="5" r="2.5" fill="#3b8641"/>
+          </pattern>
+
+          <!-- Movement Motion Paths for Vehicles & Boats -->
+          <path id="road-drive-path" d="M -50 365 C 220 365, 360 380, 460 385 C 600 395, 820 420, 1050 440 C 1200 455, 1340 470, 1490 475" fill="none"/>
+          <path id="river-boat-path" d="M 1360 280 C 1220 450, 1140 680, 1120 900 C 1100 1120, 990 1310, 850 1510 C 730 1680, 600 1770, 520 1880" fill="none"/>
+          <path id="rural-drive-path" d="M 720 1780 C 715 1630, 715 1420, 710 1180" fill="none"/>
+        </defs>
+
+        <!-- ====================================================================
+             LAYER 1: TERRAIN BASE & FOREST TOPOGRAPHY
+             ==================================================================== -->
+        <rect width="1440" height="1850" fill="#88ce58"/>
+
+        <!-- Forest Elevations (Mata Nativa & Relevo) -->
+        <g stroke="#173b39" stroke-width="6" stroke-linejoin="round">
+          <!-- Top Forest Border -->
+          <path d="M-10 -10 H1450 V210 C1240 210, 1060 130, 840 175 C600 215, 380 120, 180 175 C80 205, -10 155, -10 155 Z" fill="#71be43"/>
+          <!-- Southwest Forest Buffer -->
+          <path d="M-10 440 C80 460, 110 580, 80 710 C45 840, 85 970, -10 1050 Z" fill="#66b43b"/>
+          <!-- Southern Forest Edge -->
+          <path d="M-10 1720 C180 1730, 290 1760, 380 1860 H-10 Z" fill="#5ea834"/>
+        </g>
+
+        <!-- Clustered Amazonian Canopy Trees (Castanheiras & Seringueiras) -->
+        <g fill="#37824b" stroke="#173b39" stroke-width="3.5">
+          <!-- Northwest canopy grove -->
+          <circle cx="95" cy="180" r="32"/>
+          <circle cx="145" cy="205" r="26"/>
+          <circle cx="70" cy="225" r="22"/>
+          <!-- North central grove -->
+          <circle cx="580" cy="170" r="34"/>
+          <circle cx="635" cy="190" r="27"/>
+          <circle cx="535" cy="195" r="24"/>
+          <!-- Eastern headland trees -->
+          <circle cx="1290" cy="195" r="35"/>
+          <circle cx="1345" cy="220" r="28"/>
+          <!-- Riverbank trees -->
+          <circle cx="1060" cy="1320" r="30"/>
+          <circle cx="1115" cy="1345" r="24"/>
+          <!-- Farmland fruit trees -->
+          <circle cx="180" cy="1380" r="28"/>
+          <circle cx="225" cy="1405" r="22"/>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 2: RIO XINGU, WHITE SAND BEACHES & RIVER ISLANDS
+             ==================================================================== -->
+        <!-- White Sand Riverbank Strip (Praias do Xingu: Massanori e Pedral) -->
+        <path d="M 1450 235 C 1195 375, 1065 535, 1015 815 C 965 1085, 1055 1225, 885 1415 C 715 1595, 555 1705, 435 1860 H 1450 Z" 
+              fill="url(#sandGrad)" stroke="#173b39" stroke-width="8" stroke-linejoin="round"/>
+
+        <!-- Deep Blue Rio Xingu Water -->
+        <path d="M 1450 255 C 1220 390, 1090 545, 1040 825 C 990 1095, 1080 1235, 910 1425 C 740 1605, 580 1715, 460 1860 H 1450 Z" 
+              fill="url(#xinguGrad)" stroke="#173b39" stroke-width="8" stroke-linejoin="round"/>
+
+        <!-- Animated Wavelets on Rio Xingu -->
+        <path class="xingu-waves" d="M 1450 255 C 1220 390, 1090 545, 1040 825 C 990 1095, 1080 1235, 910 1425 C 740 1605, 580 1715, 460 1860 H 1450 Z" 
+              fill="url(#xinguWaves)"/>
+
+        <!-- Ilha Fluvial do Xingu 01 (Central Island with Sandy Beaches) -->
+        <g class="river-island-1">
+          <!-- Beach perimeter -->
+          <path d="M 1150 930 C 1145 865, 1285 865, 1315 925 C 1330 985, 1160 995, 1150 930 Z" fill="url(#sandGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <!-- Lush vegetation core -->
+          <path d="M 1165 930 C 1160 880, 1275 880, 1295 925 C 1305 965, 1175 975, 1165 930 Z" fill="#449e52" stroke="#173b39" stroke-width="3.5"/>
+          <!-- Island Palm trees -->
+          <circle cx="1205" cy="915" r="14" fill="#308240" stroke="#173b39" stroke-width="2.5"/>
+          <circle cx="1245" cy="920" r="16" fill="#308240" stroke="#173b39" stroke-width="2.5"/>
+          <circle cx="1275" cy="935" r="12" fill="#308240" stroke="#173b39" stroke-width="2"/>
+        </g>
+
+        <!-- Ilha Fluvial do Xingu 02 (Southern Archipelago Island) -->
+        <g class="river-island-2">
+          <!-- Beach perimeter -->
+          <path d="M 990 1520 C 1000 1465, 1140 1475, 1175 1530 C 1185 1585, 1025 1595, 990 1520 Z" fill="url(#sandGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <!-- Lush vegetation core -->
+          <path d="M 1005 1520 C 1015 1480, 1125 1490, 1155 1530 C 1165 1565, 1040 1575, 1005 1520 Z" fill="#449e52" stroke="#173b39" stroke-width="3.5"/>
+          <circle cx="1045" cy="1515" r="13" fill="#308240" stroke="#173b39" stroke-width="2.5"/>
+          <circle cx="1085" cy="1525" r="15" fill="#308240" stroke="#173b39" stroke-width="2.5"/>
+        </g>
+
+        <!-- Boto-cor-de-rosa Jumping in Rio Xingu -->
+        <g class="boto-leaper" transform="translate(1230, 770)">
+          <!-- Dolphin arc body -->
+          <path d="M-22 8 C-14 -12, 10 -14, 20 -2 C22 1, 16 7, 6 2 C-2 -1, -12 6, -18 10 Z" fill="#ffa7c4" stroke="#173b39" stroke-width="2.8"/>
+          <!-- Dorsal fin & fluke -->
+          <path d="M0 -10 L4 -18 L8 -9 Z" fill="#ff85ab" stroke="#173b39" stroke-width="2"/>
+          <path d="M-20 8 L-28 4 L-24 14 Z" fill="#ff85ab" stroke="#173b39" stroke-width="2"/>
+          <!-- Eye & smile -->
+          <circle cx="14" cy="-2" r="1.5" fill="#173b39"/>
+          <!-- Water splash droplets -->
+          <circle cx="-16" cy="16" r="3" fill="#ffffff" stroke="#173b39" stroke-width="1.5"/>
+          <circle cx="-8" cy="19" r="2.5" fill="#ffffff" stroke="#173b39" stroke-width="1.5"/>
+          <circle cx="4" cy="17" r="2" fill="#ffffff" stroke="#173b39" stroke-width="1.5"/>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 3: HYDRAULIC NETWORK (IGARAPÉ ALTAMIRA & IGARAPÉ AMBÉ)
+             Natural watercourse draining logically into Rio Xingu
+             ==================================================================== -->
+        <!-- Igarapé Altamira Riverbed Underlay & Shading -->
+        <path d="M 140 100 C 170 230, 240 310, 340 350 C 410 375, 460 385, 460 385 C 470 510, 440 640, 370 760 C 360 840, 400 890, 430 890 C 540 940, 680 970, 780 985 C 880 1000, 960 1010, 1055 1025" 
+              fill="none" stroke="#173b39" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Igarapé Altamira Water Stream -->
+        <path d="M 140 100 C 170 230, 240 310, 340 350 C 410 375, 460 385, 460 385 C 470 510, 440 640, 370 760 C 360 840, 400 890, 430 890 C 540 940, 680 970, 780 985 C 880 1000, 960 1010, 1055 1025" 
+              fill="none" stroke="url(#igarapeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Igarapé Altamira Center Water Reflection -->
+        <path d="M 140 100 C 170 230, 240 310, 340 350 C 410 375, 460 385, 460 385 C 470 510, 440 640, 370 760 C 360 840, 400 890, 430 890 C 540 940, 680 970, 780 985 C 880 1000, 960 1010, 1055 1025" 
+              fill="none" stroke="#d5f7fa" stroke-width="4" stroke-dasharray="24 16" stroke-linecap="round"/>
+
+        <!-- River Mouth Delta Flare (Confluence with Rio Xingu) -->
+        <path d="M 1030 1005 C 1055 1008, 1085 1015, 1105 1025 C 1085 1040, 1050 1045, 1025 1040 Z" fill="url(#igarapeGrad)" stroke="#173b39" stroke-width="4"/>
+
+        <!-- Igarapé Ambé (Secondary Southern Stream) -->
+        <path d="M 400 1260 C 510 1290, 620 1340, 750 1380 C 830 1405, 880 1415, 920 1430" 
+              fill="none" stroke="#173b39" stroke-width="26" stroke-linecap="round"/>
+        <path d="M 400 1260 C 510 1290, 620 1340, 750 1380 C 830 1405, 880 1415, 920 1430" 
+              fill="none" stroke="url(#igarapeGrad)" stroke-width="16" stroke-linecap="round"/>
+
+        <!-- ====================================================================
+             LAYER 4: ROAD NETWORK, BRIDGES & PIERS
+             ==================================================================== -->
+        <!-- BR-230 Transamazônica Base Stroke -->
+        <path d="M -50 365 C 220 365, 360 380, 460 385 C 600 395, 820 420, 1050 440 C 1200 455, 1340 470, 1490 475" 
+              fill="none" stroke="#173b39" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- BR-230 Transamazônica Asphalt Surface -->
+        <path d="M -50 365 C 220 365, 360 380, 460 385 C 600 395, 820 420, 1050 440 C 1200 455, 1340 470, 1490 475" 
+              fill="none" stroke="#ffd45c" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- BR-230 Center Dashed Stripe -->
+        <path d="M -50 365 C 220 365, 360 380, 460 385 C 600 395, 820 420, 1050 440 C 1200 455, 1340 470, 1490 475" 
+              fill="none" stroke="#ffffff" stroke-width="3.5" stroke-dasharray="14 12" stroke-linecap="round"/>
+
+        <!-- Ponte de Concreto da BR-230 (Crossing Igarapé Altamira) -->
+        <g class="bridge-transamazonica">
+          <!-- Bridge shadow -->
+          <rect x="428" y="360" width="66" height="52" rx="4" fill="#173b3944"/>
+          <!-- Concrete deck -->
+          <rect x="428" y="362" width="66" height="46" rx="4" fill="#fff8e7" stroke="#173b39" stroke-width="4"/>
+          <!-- Asphalt on bridge -->
+          <rect x="428" y="373" width="66" height="24" fill="#ffd45c"/>
+          <line x1="428" y1="385" x2="494" y2="385" stroke="#ffffff" stroke-width="3.5" stroke-dasharray="10 8"/>
+          <!-- Concrete white guardrails -->
+          <rect x="428" y="362" width="66" height="8" rx="2" fill="#ffffff" stroke="#173b39" stroke-width="3"/>
+          <rect x="428" y="400" width="66" height="8" rx="2" fill="#ffffff" stroke="#173b39" stroke-width="3"/>
+        </g>
+
+        <!-- Avenida Principal (Acesso ao Centro Urbano & Orla do Xingu) -->
+        <path d="M 770 415 C 800 520, 830 650, 870 780 C 900 880, 940 950, 955 1010" 
+              fill="none" stroke="#173b39" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 770 415 C 800 520, 830 650, 870 780 C 900 880, 940 950, 955 1010" 
+              fill="none" stroke="#ffe385" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 770 415 C 800 520, 830 650, 870 780 C 900 880, 940 950, 955 1010" 
+              fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="10 10"/>
+
+        <!-- Ponte de Alvenaria da Avenida Central (Crossing Igarapé) -->
+        <g class="bridge-central">
+          <rect x="922" y="986" width="64" height="42" rx="4" fill="#fff8e7" stroke="#173b39" stroke-width="3.5"/>
+          <rect x="922" y="995" width="64" height="24" fill="#ffe385"/>
+          <rect x="922" y="986" width="64" height="6" fill="#ded4c0" stroke="#173b39" stroke-width="2.5"/>
+          <rect x="922" y="1022" width="64" height="6" fill="#ded4c0" stroke="#173b39" stroke-width="2.5"/>
+        </g>
+
+        <!-- Passarela de Madeira da Brasília (Crossing Igarapé into Bairro Brasília) -->
+        <g class="passarela-brasilia">
+          <!-- Bridge timber shadow -->
+          <rect x="408" y="876" width="56" height="32" rx="4" fill="#173b3944"/>
+          <!-- Wooden plank walkway -->
+          <rect x="408" y="876" width="56" height="28" rx="4" fill="#b87845" stroke="#173b39" stroke-width="3.5"/>
+          <line x1="418" y1="876" x2="418" y2="904" stroke="#6d3916" stroke-width="2"/>
+          <line x1="428" y1="876" x2="428" y2="904" stroke="#6d3916" stroke-width="2"/>
+          <line x1="438" y1="876" x2="438" y2="904" stroke="#6d3916" stroke-width="2"/>
+          <line x1="448" y1="876" x2="448" y2="904" stroke="#6d3916" stroke-width="2"/>
+          <!-- Wooden handrails with cross braces -->
+          <rect x="408" y="873" width="56" height="6" rx="2" fill="#ffd45c" stroke="#173b39" stroke-width="2.5"/>
+          <rect x="408" y="901" width="56" height="6" rx="2" fill="#ffd45c" stroke="#173b39" stroke-width="2.5"/>
+        </g>
+
+        <!-- Trapiche 01 da Orla de Altamira (Central Pier extending into Rio Xingu) -->
+        <g class="trapiche-orla-1">
+          <rect x="1038" y="760" width="70" height="26" rx="3" fill="#b87845" stroke="#173b39" stroke-width="3.5"/>
+          <line x1="1052" y1="760" x2="1052" y2="786" stroke="#6d3916" stroke-width="2"/>
+          <line x1="1066" y1="760" x2="1066" y2="786" stroke="#6d3916" stroke-width="2"/>
+          <line x1="1080" y1="760" x2="1080" y2="786" stroke="#6d3916" stroke-width="2"/>
+          <line x1="1094" y1="760" x2="1094" y2="786" stroke="#6d3916" stroke-width="2"/>
+          <!-- Mooring bollards -->
+          <circle cx="1102" cy="764" r="3.5" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+          <circle cx="1102" cy="782" r="3.5" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+        </g>
+
+        <!-- Trapiche 02 do Porto Ecoturístico (Southern Pier) -->
+        <g class="trapiche-orla-2">
+          <rect x="1040" y="1170" width="72" height="28" rx="3" fill="#b87845" stroke="#173b39" stroke-width="3.5"/>
+          <line x1="1056" y1="1170" x2="1056" y2="1198" stroke="#6d3916" stroke-width="2"/>
+          <line x1="1072" y1="1170" x2="1072" y2="1198" stroke="#6d3916" stroke-width="2"/>
+          <line x1="1088" y1="1170" x2="1088" y2="1198" stroke="#6d3916" stroke-width="2"/>
+          <circle cx="1106" cy="1176" r="3.5" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+          <circle cx="1106" cy="1192" r="3.5" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+        </g>
+
+        <!-- Ramais Rurais & Travessões (Estradas de Terra Batida para a Roça) -->
+        <g class="rural-ramais">
+          <!-- Main Ramal heading south -->
+          <path d="M 680 1100 C 700 1280, 715 1460, 720 1680 L 720 1850" 
+                fill="none" stroke="#173b39" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 680 1100 C 700 1280, 715 1460, 720 1680 L 720 1850" 
+                fill="none" stroke="#dfaa56" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 680 1100 C 700 1280, 715 1460, 720 1680 L 720 1850" 
+                fill="none" stroke="#ba8230" stroke-width="2.5" stroke-dasharray="8 8"/>
+          <!-- Branching Travessão to agricultural plots -->
+          <path d="M 710 1440 C 620 1440, 520 1450, 440 1450" 
+                fill="none" stroke="#173b39" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 710 1440 C 620 1440, 520 1450, 440 1450" 
+                fill="none" stroke="#dfaa56" stroke-width="10" stroke-linecap="round"/>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 5: STRUCTURED CITY SECTORS & REGIONAL NEIGHBORHOODS
+             No more repetitive waffle brick patterns! Distinct, logical zones.
+             ==================================================================== -->
+
+        <!-- 5.1 POLO ACADÊMICO / CAMPUS UNIVERSITÁRIO (Near Fase 01) -->
+        <g class="sector-academico">
+          <!-- Campus park ring -->
+          <rect x="180" y="270" width="230" height="135" rx="35" fill="#9cd76b" stroke="#173b39" stroke-width="4.5"/>
+          <!-- Campus walkways -->
+          <circle cx="295" cy="335" r="48" fill="#fff8e7" stroke="#173b39" stroke-width="3"/>
+          <circle cx="295" cy="335" r="32" fill="#75c84d" stroke="#173b39" stroke-width="2"/>
+          <!-- Main Academic Building / Biblioteca Central -->
+          <rect x="255" y="305" width="80" height="48" rx="8" fill="#fff8e7" stroke="#173b39" stroke-width="3.5"/>
+          <!-- Purple Academic Roof -->
+          <polygon points="250,308 295,285 340,308" fill="#7f72d8" stroke="#173b39" stroke-width="3" stroke-linejoin="round"/>
+          <!-- Columns -->
+          <line x1="270" y1="318" x2="270" y2="345" stroke="#173b39" stroke-width="2.5"/>
+          <line x1="282" y1="318" x2="282" y2="345" stroke="#173b39" stroke-width="2.5"/>
+          <line x1="308" y1="318" x2="308" y2="345" stroke="#173b39" stroke-width="2.5"/>
+          <line x1="320" y1="318" x2="320" y2="345" stroke="#173b39" stroke-width="2.5"/>
+          <!-- Graduation Cap / Book Emblem -->
+          <polygon points="295,294 304,298 295,302 286,298" fill="#ffd45c" stroke="#173b39" stroke-width="1.5"/>
+        </g>
+
+        <!-- 5.2 CENTRO URBANO & POLO DE SAÚDE (Near Fase 02) -->
+        <g class="sector-centro-saude">
+          <!-- Urban paved sub-base -->
+          <path d="M 680 435 C 880 415, 1020 445, 1060 495 L 1050 835 C 960 855, 780 845, 680 815 Z" 
+                fill="#f5ebd7" stroke="#173b39" stroke-width="5" stroke-linejoin="round"/>
+
+          <!-- Praça da Matriz / Parque Central com Fonte -->
+          <g class="praca-central">
+            <rect x="835" y="535" width="115" height="90" rx="14" fill="#68b63e" stroke="#173b39" stroke-width="3.5"/>
+            <!-- Park stone walkways -->
+            <line x1="835" y1="580" x2="950" y2="580" stroke="#fff8e7" stroke-width="6"/>
+            <line x1="892" y1="535" x2="892" y2="625" stroke="#fff8e7" stroke-width="6"/>
+            <!-- Central circular fountain -->
+            <circle cx="892" cy="580" r="16" fill="#43a9cf" stroke="#173b39" stroke-width="2.5"/>
+            <circle cx="892" cy="580" r="8" fill="#ffffff" stroke="#173b39" stroke-width="2"/>
+            <!-- Park shade trees -->
+            <circle cx="855" cy="555" r="10" fill="#2d6e32" stroke="#173b39" stroke-width="2"/>
+            <circle cx="930" cy="555" r="10" fill="#2d6e32" stroke="#173b39" stroke-width="2"/>
+            <circle cx="855" cy="605" r="10" fill="#2d6e32" stroke="#173b39" stroke-width="2"/>
+            <circle cx="930" cy="605" r="10" fill="#2d6e32" stroke="#173b39" stroke-width="2"/>
+          </g>
+
+          <!-- Complexo de Saúde / Hospital Municipal (Fase 02 Anchor) -->
+          <g class="hospital-block">
+            <!-- Clinic Building -->
+            <rect x="975" y="535" width="80" height="90" rx="12" fill="#fff8e7" stroke="#173b39" stroke-width="3.5"/>
+            <!-- Pink Rooftop Accent -->
+            <rect x="983" y="543" width="64" height="74" rx="8" fill="#ffd4e0" stroke="#173b39" stroke-width="2"/>
+            <!-- Prominent Red/Pink Medical Cross Symbol (+) -->
+            <rect x="1009" y="562" width="12" height="36" rx="3" fill="#ef6f8f" stroke="#173b39" stroke-width="2"/>
+            <rect x="997" y="574" width="36" height="12" rx="3" fill="#ef6f8f" stroke="#173b39" stroke-width="2"/>
+            <circle cx="1015" cy="580" r="2" fill="#ffffff"/>
+          </g>
+
+          <!-- Commercial & Residential City Blocks (Warm, Distinct Quadras) -->
+          <!-- Quadra 01: Comércio Norte (Terracotta) -->
+          <g class="quadra-q1">
+            <rect x="705" y="455" width="105" height="62" rx="10" fill="#ea7535" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="715" y="463" width="38" height="46" rx="4" fill="#ffaa75" stroke="#173b39" stroke-width="1.8"/>
+            <rect x="760" y="463" width="40" height="46" rx="4" fill="#d85e1c" stroke="#173b39" stroke-width="1.8"/>
+          </g>
+
+          <!-- Quadra 02: Centro Cívico (Golden Ochre) -->
+          <g class="quadra-q2">
+            <rect x="835" y="455" width="115" height="62" rx="10" fill="#f9be52" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="845" y="463" width="46" height="46" rx="4" fill="#ffd97d" stroke="#173b39" stroke-width="1.8"/>
+            <rect x="898" y="463" width="42" height="46" rx="4" fill="#e0a032" stroke="#173b39" stroke-width="1.8"/>
+          </g>
+
+          <!-- Quadra 03: Serviços & Lojas -->
+          <g class="quadra-q3">
+            <rect x="705" y="535" width="105" height="90" rx="10" fill="#fff8e7" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="715" y="545" width="85" height="70" rx="6" fill="#f2a868" stroke="#173b39" stroke-width="2"/>
+            <!-- Shop Awning -->
+            <polygon points="712,580 802,580 798,590 716,590" fill="#ff7048" stroke="#173b39" stroke-width="1.5"/>
+          </g>
+
+          <!-- Quadra 04: Bairro Central Sul -->
+          <g class="quadra-q4">
+            <rect x="705" y="645" width="105" height="75" rx="10" fill="#ea7535" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="715" y="655" width="85" height="55" rx="6" fill="#ffd099" stroke="#173b39" stroke-width="2"/>
+          </g>
+
+          <!-- Quadra 05: Praça de Serviços Sul -->
+          <g class="quadra-q5">
+            <rect x="835" y="645" width="115" height="75" rx="10" fill="#f9be52" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="845" y="655" width="95" height="55" rx="6" fill="#ffe29d" stroke="#173b39" stroke-width="2"/>
+          </g>
+
+          <!-- Quadra 06: Orla Boulevard (Gastronomia à beira-rio) -->
+          <g class="quadra-q6">
+            <rect x="975" y="645" width="75" height="75" rx="10" fill="#fff8e7" stroke="#173b39" stroke-width="3.5"/>
+            <rect x="983" y="653" width="59" height="59" rx="6" fill="#75c8d6" stroke="#173b39" stroke-width="2"/>
+            <!-- Cafe Awnings -->
+            <polygon points="980,675 1045,675 1042,684 983,684" fill="#ffd45c" stroke="#173b39" stroke-width="1.5"/>
+          </g>
+
+          <!-- Orla Promenade Walkway with Palm Trees along the Riverbank -->
+          <g class="orla-promenade">
+            <line x1="1025" y1="500" x2="1005" y2="780" stroke="#f6dfa2" stroke-width="14" stroke-linecap="round"/>
+            <line x1="1025" y1="500" x2="1005" y2="780" stroke="#173b39" stroke-width="1.5" stroke-dasharray="6 6"/>
+            <!-- Açaí Palm Trees along the Orla -->
+            <circle cx="1025" cy="520" r="7" fill="#2d6e32" stroke="#173b39" stroke-width="1.8"/>
+            <circle cx="1020" cy="580" r="7" fill="#2d6e32" stroke="#173b39" stroke-width="1.8"/>
+            <circle cx="1015" cy="650" r="7" fill="#2d6e32" stroke="#173b39" stroke-width="1.8"/>
+            <circle cx="1010" cy="720" r="7" fill="#2d6e32" stroke="#173b39" stroke-width="1.8"/>
+          </g>
+        </g>
+
+        <!-- 5.3 BAIRRO BRASÍLIA JUNTO AO IGARAPÉ (Near Fase 03) -->
+        <g class="sector-brasilia">
+          <!-- Neighborhood Paved Sub-base -->
+          <path d="M 160 790 C 270 770, 390 775, 410 820 L 400 1060 C 310 1070, 200 1060, 160 1020 Z" 
+                fill="#fbeece" stroke="#173b39" stroke-width="5" stroke-linejoin="round"/>
+
+          <!-- Residential Blocks of Bairro Brasília -->
+          <g class="brasilia-blocks">
+            <!-- Block B1 -->
+            <rect x="180" y="805" width="90" height="60" rx="8" fill="#ff7048" stroke="#173b39" stroke-width="3"/>
+            <rect x="188" y="813" width="74" height="44" rx="4" fill="#ffa287" stroke="#173b39" stroke-width="1.8"/>
+            <!-- Block B2 -->
+            <rect x="290" y="805" width="85" height="60" rx="8" fill="#ffd45c" stroke="#173b39" stroke-width="3"/>
+            <rect x="298" y="813" width="69" height="44" rx="4" fill="#ffec9e" stroke="#173b39" stroke-width="1.8"/>
+            <!-- Block B3 (Central Community Block) -->
+            <rect x="180" y="885" width="90" height="65" rx="8" fill="#ffd45c" stroke="#173b39" stroke-width="3"/>
+            <rect x="188" y="893" width="74" height="49" rx="4" fill="#ffeb99" stroke="#173b39" stroke-width="1.8"/>
+            <!-- Block B4 -->
+            <rect x="290" y="885" width="85" height="65" rx="8" fill="#ff7048" stroke="#173b39" stroke-width="3"/>
+            <rect x="298" y="893" width="69" height="49" rx="4" fill="#ffa58a" stroke="#173b39" stroke-width="1.8"/>
+            <!-- Block B5 (South) -->
+            <rect x="180" y="970" width="90" height="60" rx="8" fill="#ff8c5a" stroke="#173b39" stroke-width="3"/>
+            <rect x="290" y="970" width="85" height="60" rx="8" fill="#fbb44c" stroke="#173b39" stroke-width="3"/>
+          </g>
+
+          <!-- Palafitas & Casas Ribeirinhas (Historic Riverside Houses along the Igarapé) -->
+          <g class="casas-ribeirinhas">
+            <!-- House 1 -->
+            <rect x="365" y="830" width="28" height="24" rx="3" fill="#fff8e7" stroke="#173b39" stroke-width="2.2"/>
+            <polygon points="362,832 379,820 396,832" fill="#ff7048" stroke="#173b39" stroke-width="2"/>
+            <!-- House 2 -->
+            <rect x="360" y="920" width="30" height="26" rx="3" fill="#fff8e7" stroke="#173b39" stroke-width="2.2"/>
+            <polygon points="357,922 375,910 393,922" fill="#3c92ca" stroke="#173b39" stroke-width="2"/>
+            <!-- House 3 -->
+            <rect x="375" y="990" width="28" height="24" rx="3" fill="#fff8e7" stroke="#173b39" stroke-width="2.2"/>
+            <polygon points="372,992 389,980 406,992" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+          </g>
+
+          <!-- Feirinha Comunitária da Brasília -->
+          <g class="feira-brasilia" transform="translate(245, 942)">
+            <rect x="0" y="0" width="36" height="22" rx="4" fill="#fff8e7" stroke="#173b39" stroke-width="2"/>
+            <polygon points="-3,5 39,5 35,11 1,11" fill="#ff7048" stroke="#173b39" stroke-width="1.8"/>
+          </g>
+        </g>
+
+        <!-- 5.4 ORLA DO XINGU & ESTAÇÃO ECOTURÍSTICA (Near Fase 04) -->
+        <g class="sector-ecoturismo">
+          <!-- Mirante de Observação da Natureza (Lookout Tower) -->
+          <g class="mirante-torre" transform="translate(1005, 1130)">
+            <!-- Wooden tower legs -->
+            <line x1="8" y1="45" x2="16" y2="8" stroke="#8e5836" stroke-width="3"/>
+            <line x1="32" y1="45" x2="24" y2="8" stroke="#8e5836" stroke-width="3"/>
+            <line x1="10" y1="28" x2="30" y2="28" stroke="#6d3916" stroke-width="2"/>
+            <!-- Platform -->
+            <rect x="10" y="4" width="20" height="8" rx="2" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+            <!-- Roof -->
+            <polygon points="8,6 20,-4 32,6" fill="#3c92ca" stroke="#173b39" stroke-width="2"/>
+          </g>
+
+          <!-- Ecotrail Boardwalk into Forest (Trilha Ecológica) -->
+          <path d="M 970 1200 C 990 1215, 1020 1225, 1050 1230" fill="none" stroke="#b87845" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 970 1200 C 990 1215, 1020 1225, 1050 1230" fill="none" stroke="#173b39" stroke-width="1" stroke-dasharray="4 4"/>
+          <!-- Trail Archway Marker -->
+          <g transform="translate(950, 1180)">
+            <rect x="0" y="0" width="24" height="26" rx="3" fill="#b87845" stroke="#173b39" stroke-width="2.5"/>
+            <rect x="3" y="3" width="18" height="8" rx="1.5" fill="#3c92ca"/>
+          </g>
+        </g>
+
+        <!-- 5.5 CINTURÃO RURAL & AGRICULTURA FAMILIAR DA ROÇA (Near Fase 05) -->
+        <g class="sector-rural">
+          <!-- Field 01: Roça de Mandioca & Hortaliças -->
+          <g class="roca-field-1">
+            <rect x="250" y="1410" width="190" height="130" rx="16" fill="#9bd96c" stroke="#173b39" stroke-width="4"/>
+            <rect x="258" y="1418" width="174" height="114" rx="12" fill="url(#cropFurrows)"/>
+          </g>
+
+          <!-- Field 02: Cacau da Transamazônica -->
+          <g class="roca-field-2">
+            <rect x="460" y="1395" width="180" height="145" rx="16" fill="#80c65c" stroke="#173b39" stroke-width="4"/>
+            <rect x="468" y="1403" width="164" height="129" rx="12" fill="url(#cacaoTrees)"/>
+          </g>
+
+          <!-- Field 03: Hortas Sustentáveis & Produção Familiar -->
+          <g class="roca-field-3">
+            <rect x="770" y="1405" width="180" height="130" rx="16" fill="#b8e882" stroke="#173b39" stroke-width="4"/>
+            <rect x="778" y="1413" width="164" height="114" rx="12" fill="url(#cropFurrows)"/>
+          </g>
+
+          <!-- Sítio Familiar, Casinha Rural & Curral com Cerca -->
+          <g class="sitio-rural">
+            <rect x="370" y="1570" width="210" height="140" rx="16" fill="#a4de75" stroke="#173b39" stroke-width="4"/>
+            <!-- Farm Cottage -->
+            <rect x="395" y="1610" width="46" height="34" rx="4" fill="#fff8e7" stroke="#173b39" stroke-width="2.8"/>
+            <polygon points="390,1612 418,1594 446,1612" fill="#ff7048" stroke="#173b39" stroke-width="2.8"/>
+            <rect x="412" y="1624" width="12" height="20" fill="#8e5836"/>
+            <!-- Water Well -->
+            <circle cx="465" cy="1625" r="9" fill="#ffd45c" stroke="#173b39" stroke-width="2.2"/>
+            <circle cx="465" cy="1625" r="5" fill="#43a9cf"/>
+            <!-- Split-rail wooden fence around pasture -->
+            <path d="M 490 1600 H 565 V 1680 H 490 Z" fill="none" stroke="#8e5836" stroke-width="3" stroke-dasharray="8 6"/>
+          </g>
+
+          <!-- Field 05: Pomar e Roça Familiar Sul -->
+          <g class="roca-field-5">
+            <rect x="830" y="1555" width="190" height="145" rx="16" fill="#92d463" stroke="#173b39" stroke-width="4"/>
+            <rect x="838" y="1563" width="174" height="129" rx="12" fill="url(#cacaoTrees)"/>
+          </g>
+
+          <!-- Barraca da Feira da Roça (Fresh Harvest Stand) -->
+          <g class="feira-da-roca" transform="translate(640, 1545)">
+            <rect x="0" y="0" width="44" height="26" rx="4" fill="#fff8e7" stroke="#173b39" stroke-width="2.5"/>
+            <polygon points="-3,5 47,5 43,12 1,12" fill="#559b34" stroke="#173b39" stroke-width="2"/>
+            <!-- Produce crates -->
+            <circle cx="12" cy="18" r="4" fill="#ff7048"/>
+            <circle cx="24" cy="18" r="4" fill="#ffd45c"/>
+            <circle cx="34" cy="18" r="4" fill="#559b34"/>
+          </g>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 6: OVERWORLD STAGE PEDESTALS (MARIO CHECKPOINT PADS)
+             Directly beneath the 5 product balls to anchor them to the map!
+             ==================================================================== -->
+        <!-- Pad 01: Polo Acadêmico (Under Fase 01 at x=340, y=447) -->
+        <g class="stage-pad pad-1" transform="translate(340, 447)">
+          <circle cx="0" cy="0" r="92" fill="url(#padGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="78" fill="none" stroke="#7f72d8" stroke-width="4.5" stroke-dasharray="10 8"/>
+          <circle cx="0" cy="0" r="62" fill="#f1edff" stroke="#173b39" stroke-width="2"/>
+          <polygon points="0,-16 4,-4 16,-4 7,4 10,16 0,8 -10,16 -7,4 -16,-4 -4,-4" fill="#7f72d8" stroke="#173b39" stroke-width="1.8"/>
+        </g>
+
+        <!-- Pad 02: Polo de Saúde / Centro (Under Fase 02 at x=1090, y=680) -->
+        <g class="stage-pad pad-2" transform="translate(1090, 680)">
+          <circle cx="0" cy="0" r="96" fill="url(#padGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="82" fill="none" stroke="#ef6f8f" stroke-width="4.5" stroke-dasharray="10 8"/>
+          <circle cx="0" cy="0" r="66" fill="#fff0f4" stroke="#173b39" stroke-width="2"/>
+          <polygon points="0,-16 4,-4 16,-4 7,4 10,16 0,8 -10,16 -7,4 -16,-4 -4,-4" fill="#ef6f8f" stroke="#173b39" stroke-width="1.8"/>
+        </g>
+
+        <!-- Pad 03: Bairro Brasília (Under Fase 03 at x=380, y=1005) -->
+        <g class="stage-pad pad-3" transform="translate(380, 1005)">
+          <circle cx="0" cy="0" r="90" fill="url(#padGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="76" fill="none" stroke="#ff7048" stroke-width="4.5" stroke-dasharray="10 8"/>
+          <circle cx="0" cy="0" r="60" fill="#fff2ed" stroke="#173b39" stroke-width="2"/>
+          <polygon points="0,-16 4,-4 16,-4 7,4 10,16 0,8 -10,16 -7,4 -16,-4 -4,-4" fill="#ff7048" stroke="#173b39" stroke-width="1.8"/>
+        </g>
+
+        <!-- Pad 04: Orla & Ecoturismo (Under Fase 04 at x=1050, y=1242) -->
+        <g class="stage-pad pad-4" transform="translate(1050, 1242)">
+          <circle cx="0" cy="0" r="92" fill="url(#padGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="78" fill="none" stroke="#3c92ca" stroke-width="4.5" stroke-dasharray="10 8"/>
+          <circle cx="0" cy="0" r="62" fill="#eef7fc" stroke="#173b39" stroke-width="2"/>
+          <polygon points="0,-16 4,-4 16,-4 7,4 10,16 0,8 -10,16 -7,4 -16,-4 -4,-4" fill="#3c92ca" stroke="#173b39" stroke-width="1.8"/>
+        </g>
+
+        <!-- Pad 05: Da Roça / Rural (Under Fase 05 at x=720, y=1565) -->
+        <g class="stage-pad pad-5" transform="translate(720, 1565)">
+          <circle cx="0" cy="0" r="96" fill="url(#padGrad)" stroke="#173b39" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="82" fill="none" stroke="#559b34" stroke-width="4.5" stroke-dasharray="10 8"/>
+          <circle cx="0" cy="0" r="66" fill="#f1faeb" stroke="#173b39" stroke-width="2"/>
+          <polygon points="0,-16 4,-4 16,-4 7,4 10,16 0,8 -10,16 -7,4 -16,-4 -4,-4" fill="#559b34" stroke="#173b39" stroke-width="1.8"/>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 7: MARIO DOTTED OVERWORLD STAGE TRAIL
+             Sequential journey weaving from Pad 1 -> Pad 2 -> Pad 3 -> Pad 4 -> Pad 5
+             ==================================================================== -->
+        <!-- Shadow Base Contour -->
+        <path d="
+          M 340 447 
+          C 490 430, 710 470, 850 540 
+          C 950 590, 1040 625, 1090 680 
+          C 1120 740, 940 820, 770 870 
+          C 610 915, 470 940, 380 1005 
+          C 320 1060, 480 1140, 670 1160 
+          C 830 1180, 960 1200, 1050 1242 
+          C 1110 1320, 980 1420, 860 1480 
+          C 800 1515, 760 1535, 720 1565
+        " fill="none" stroke="#173b39" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Animated Gold Dashed Trail -->
+        <path class="mario-stage-trail" d="
+          M 340 447 
+          C 490 430, 710 470, 850 540 
+          C 950 590, 1040 625, 1090 680 
+          C 1120 740, 940 820, 770 870 
+          C 610 915, 470 940, 380 1005 
+          C 320 1060, 480 1140, 670 1160 
+          C 830 1180, 960 1200, 1050 1242 
+          C 1110 1320, 980 1420, 860 1480 
+          C 800 1515, 760 1535, 720 1565
+        " fill="none" stroke="#ffd45c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Waypoint Stepping Stones along the Trail -->
+        <g fill="#fff8e7" stroke="#173b39" stroke-width="3">
+          <circle cx="600" cy="460" r="10"/>
+          <circle cx="850" cy="540" r="10"/>
+          <circle cx="910" cy="800" r="10"/>
+          <circle cx="630" cy="910" r="10"/>
+          <circle cx="510" cy="1110" r="10"/>
+          <circle cx="820" cy="1175" r="10"/>
+          <circle cx="940" cy="1440" r="10"/>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 8: ANIMATED VEHICLES & REGIONAL RIVER LIFE
+             ==================================================================== -->
+        <!-- Animated Produce Truck Driving Smoothly along Highway BR-230 -->
+        <g class="highway-truck">
+          <animateMotion dur="24s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#road-drive-path"/>
+          </animateMotion>
+          <g transform="translate(-25, -12)">
+            <!-- Shadow -->
+            <rect x="-2" y="16" width="50" height="8" rx="4" fill="#173b3933"/>
+            <!-- Cab & Bed -->
+            <rect x="0" y="0" width="46" height="20" rx="5" fill="#ff7048" stroke="#173b39" stroke-width="3"/>
+            <rect x="24" y="2" width="16" height="15" rx="3" fill="#ffffff" stroke="#173b39" stroke-width="2"/>
+            <rect x="4" y="3" width="16" height="13" rx="2" fill="#ffd45c" stroke="#173b39" stroke-width="2"/>
+            <!-- Wheels -->
+            <circle cx="10" cy="20" r="5" fill="#173b39"/>
+            <circle cx="10" cy="20" r="2" fill="#ffffff"/>
+            <circle cx="36" cy="20" r="5" fill="#173b39"/>
+            <circle cx="36" cy="20" r="2" fill="#ffffff"/>
+          </g>
+        </g>
+
+        <!-- Animated Barco Regional / Voadeira Cruising Down Rio Xingu -->
+        <g class="xingu-boat">
+          <animateMotion dur="30s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#river-boat-path"/>
+          </animateMotion>
+          <g transform="translate(-28, -14)">
+            <!-- Boat hull -->
+            <path d="M 0 12 L 12 24 L 46 24 L 56 12 Z" fill="#fff8e7" stroke="#173b39" stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M 5 15 L 12 22 L 44 22 L 51 15 Z" fill="#3c92ca"/>
+            <!-- Cabin -->
+            <rect x="16" y="2" width="24" height="11" rx="3" fill="#ffd45c" stroke="#173b39" stroke-width="2.5"/>
+            <rect x="20" y="4" width="5" height="6" rx="1" fill="#173b39"/>
+            <rect x="30" y="4" width="5" height="6" rx="1" fill="#173b39"/>
+            <!-- Flag -->
+            <line x1="14" y1="2" x2="14" y2="-6" stroke="#173b39" stroke-width="2"/>
+            <polygon points="14,-6 24,-3 14,0" fill="#ef6f8f"/>
+          </g>
+        </g>
+
+        <!-- Animated Produce Pickup on Ramal Rural heading to City -->
+        <g class="rural-pickup">
+          <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#rural-drive-path"/>
+          </animateMotion>
+          <g transform="translate(-16, -10)">
+            <rect x="0" y="0" width="32" height="16" rx="4" fill="#559b34" stroke="#173b39" stroke-width="2.5"/>
+            <rect x="18" y="2" width="10" height="12" rx="2" fill="#ffffff" stroke="#173b39" stroke-width="1.5"/>
+            <circle cx="8" cy="16" r="4" fill="#173b39"/>
+            <circle cx="24" cy="16" r="4" fill="#173b39"/>
+          </g>
+        </g>
+
+        <!-- ====================================================================
+             LAYER 9: INTEGRATED CRISP GEOGRAPHY LABELS (INSIDE SVG)
+             ==================================================================== -->
+        <g font-family="Trebuchet MS, sans-serif" font-weight="900" fill="#173b39">
+          <!-- BR-230 Milestone Label -->
+          <g transform="translate(60, 335)">
+            <rect x="-10" y="-18" width="240" height="26" rx="13" fill="#ffd45c" stroke="#173b39" stroke-width="3"/>
+            <text x="8" y="1" font-size="13" letter-spacing="1">BR-230 · TRANSAMAZÔNICA</text>
+          </g>
+
+          <!-- Rio Xingu Label (Proudly in Open Water) -->
+          <g transform="translate(1140, 720)">
+            <text x="0" y="0" fill="#ffffff" font-size="28" letter-spacing="4" text-shadow="0 3px 8px rgba(0,0,0,0.4)">RIO XINGU</text>
+            <text x="4" y="22" fill="#bcf5fb" font-size="11" letter-spacing="2">BACIA AMAZÔNICA</text>
+          </g>
+
+          <!-- Igarapé Altamira Flowing Label -->
+          <g transform="translate(560, 930) rotate(10)">
+            <text x="0" y="0" fill="#104240" font-size="14" letter-spacing="1.5">IGARAPÉ ALTAMIRA ➔</text>
+          </g>
+        </g>
+      </svg>
+
+      <!-- Asynchronous Level Nodes (Fase 1 -> 5) -->
+      <!-- FASE 1 -->
+      <article class="product-ball edu" tabindex="0" role="button" aria-label="Fase 1: Rede Acadêmica" data-stage="1">
+        <span class="stage-badge">★ FASE 01</span>
+        <span class="stage-arrow">↗</span>
+        <span class="category">Educação</span>
+        <h3>Rede Acadêmica</h3>
+        <p>Um hub para encontrar artigos sobre Altamira e região, publicados de 1990 a 2026 e filtrados por temas.</p>
+        <div class="mini-tags">
+          <span>36 anos de pesquisa</span>
+          <span>busca por tema</span>
+          <span>acesso aberto</span>
+        </div>
+      </article>
+
+      <!-- FASE 2 -->
+      <article class="product-ball health" tabindex="0" role="button" aria-label="Fase 2: Guia de Saúde" data-stage="2">
+        <span class="stage-badge">★ FASE 02</span>
+        <span class="stage-arrow">↗</span>
+        <span class="category">Saúde</span>
+        <h3>Guia de Saúde</h3>
+        <p>Profissionais por especialidade e mapa de exames nas clínicas da cidade: medicina, odonto, fisio, psicologia, nutrição e mais.</p>
+        <div class="mini-tags">
+          <span>especialidades</span>
+          <span>mapa de exames</span>
+          <span>cuidados locais</span>
+        </div>
+      </article>
+
+      <!-- FASE 3 -->
+      <article class="product-ball community" tabindex="0" role="button" aria-label="Fase 3: Lá na Brasília" data-stage="3">
+        <span class="stage-badge">★ FASE 03</span>
+        <span class="stage-arrow">↗</span>
+        <span class="category">Comunidade</span>
+        <h3>Lá na Brasília</h3>
+        <p>O bairro Brasília no bolso: comércio, avisos, obituário, classificados e informação de vizinho para vizinho.</p>
+        <div class="mini-tags">
+          <span>rede de bairro</span>
+          <span>avisos</span>
+          <span>comércio local</span>
+        </div>
+      </article>
+
+      <!-- FASE 4 -->
+      <article class="product-ball tourism" tabindex="0" role="button" aria-label="Fase 4: Econexão" data-stage="4">
+        <span class="stage-badge">★ FASE 04</span>
+        <span class="stage-arrow">↗</span>
+        <span class="category">Turismo</span>
+        <h3>Econexão</h3>
+        <p>Rotas conectadas a experiências, natureza, comunidades e estabelecimentos que fazem parte do caminho.</p>
+        <div class="mini-tags">
+          <span>trilhas ecológicas</span>
+          <span>natureza</span>
+          <span>comunidades</span>
+        </div>
+      </article>
+
+      <!-- FASE 5 -->
+      <article class="product-ball food" tabindex="0" role="button" aria-label="Fase 5: Da Roça" data-stage="5">
+        <span class="stage-badge">★ FASE 05</span>
+        <span class="stage-arrow">↗</span>
+        <span class="category">Segurança Alimentar</span>
+        <h3>Da Roça</h3>
+        <p>Produção familiar regularizada direto para a demanda urbana, com venda e entrega fresca na cidade.</p>
+        <div class="mini-tags">
+          <span>agricultura familiar</span>
+          <span>entrega urbana</span>
+          <span>renda no campo</span>
+        </div>
+      </article>
+
+      <!-- Hanging Wooden Signposts (Territory Landmarks) -->
+      <span class="map-label l-br230">🛣️ BR-230 · Transamazônica</span>
+      <span class="map-label l-univ">🎓 Polo Acadêmico · UFPA</span>
+      <span class="map-label l-saude">🏥 Polo de Saúde &amp; Centro</span>
+      <span class="map-label l-brasilia">🏡 Bairro Brasília</span>
+      <span class="map-label l-igarape">🌊 Igarapé Altamira</span>
+      <span class="map-label l-orla">🛶 Orla do Xingu &amp; Ecoturismo</span>
+      <span class="map-label l-roca">🌾 Ramal &amp; Produção Familiar</span>
+      <span class="map-label l-xingu">🚢 Rio Xingu</span>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: GAMES & SIMULAÇÃO — "FASE BÔNUS / TENDA ARCADE" (Warp-in)
+         ====================================================================== -->
+    <section class="games" id="jogos">
+      <div class="wrap">
+        <div class="games-head" data-motion="fade-up">
+          <div>
+            <span class="kicker" style="background:#ffd45c; color:var(--ink)">★ FASE BÔNUS · ARCADE ★</span>
+            <h2>Aprender também<br>pode ser brincadeira.</h2>
+          </div>
+          <p>Estamos criando novas formas de explorar ideias, sistemas e desafios. É uma área viva em construção — e já tem um jogo pronto para você testar no navegador.</p>
+        </div>
+
+        <article class="game-card" id="gameCard">
+          <div class="game-copy">
+            <span class="status"><i></i> Disponível para Jogar</span>
+            <h3>Hexa Infinity</h3>
+            <p>Um quebra-cabeça 3D relaxante e inteligente onde você organiza e combina peças hexagonais de cores vibrantes. Teste suas habilidades lógicas agora mesmo!</p>
+            <a class="button" href="https://brunodarwich.github.io/hexa-sort-3d/" target="_blank" rel="noopener">
+              ▶ Jogar agora no navegador ↗
+            </a>
+          </div>
+
+          <div class="game-art">
+            <img class="game-feature" src="hexa-infinity-recurso-grafico-1024x500.png" alt="Logo e tela do jogo Hexa Infinity">
+          </div>
+        </article>
+
+        <p class="game-note" data-motion="fade-up" style="--delay: 0.3s;">
+          <span>Em desenvolvimento:</span> novas simulações interativas e fases experimentais chegam em breve.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: CONTACT / STUDIO OUTRO ("SOBRE A PULSO")
+         ====================================================================== -->
+    <section class="contact" id="contato">
+      <div class="wrap contact-box">
+        <span class="pulso-dev-logo" id="pulsoLogo" role="img" aria-label="Pulso Dev"></span>
+        <h2 data-motion="fade-up" style="--delay: 0.15s;">Gostou da proposta?</h2>
+        <p data-motion="fade-up" style="--delay: 0.25s;">
+          <strong>Conheça os apps da Pulso Dev: tecnologia criada por aqui para transformar a cidade e conectar nossa gente.</strong>
+        </p>
+        <div data-motion="pop-in" style="--delay: 0.35s;">
+          <a class="button play-button" href="https://play.google.com/store/search?q=Pulso%20Dev&amp;c=apps" target="_blank" rel="noopener">
+            <span class="play-mark">▶</span> Baixar na Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer>
+    <div class="wrap foot">
+      <a class="brand" href="#inicio">
+        <span class="pulse"></span> PULSO
+      </a>
+      <small>Dados locais · ideias vivas · impacto por perto.</small>
+      <small>Altamira, Pará · 2026</small>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MOTION ORCHESTRATION & RETRO AUDIO SYNTH (Web Audio API)
+       ======================================================================== -->
+  <script>
+    // --------------------------------------------------------------------------
+    // 1. Mobile Menu Toggle
+    // --------------------------------------------------------------------------
+    const menuBtn = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuBtn.onclick = () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuBtn.textContent = isOpen ? '×' : '☰';
+      playRetroSound('click');
+    };
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.onclick = () => {
+        navLinks.classList.remove('open');
+        menuBtn.textContent = '☰';
+        playRetroSound('click');
+      };
+    });
+
+    // --------------------------------------------------------------------------
+    // 2. 16-Bit / Retro Sound Synthesizer (Native Web Audio API)
+    // --------------------------------------------------------------------------
+    let audioCtx = null;
+    let soundEnabled = false;
+
+    const soundToggle = document.getElementById('soundToggle');
+    const soundIcon = document.getElementById('soundIcon');
+    const soundLabel = document.getElementById('soundLabel');
+
+    soundToggle.addEventListener('click', () => {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+      }
+
+      soundEnabled = !soundEnabled;
+      if (soundEnabled) {
+        soundToggle.classList.add('active');
+        soundIcon.textContent = '🔊';
+        soundLabel.textContent = 'Som: ON';
+        playRetroSound('coin');
+      } else {
+        soundToggle.classList.remove('active');
+        soundIcon.textContent = '🔈';
+        soundLabel.textContent = 'Som: OFF';
+      }
+    });
+
+    function playRetroSound(type) {
+      if (!soundEnabled || !audioCtx) return;
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      if (type === 'jump') {
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(150, now);
+        osc.frequency.exponentialRampToValueAtTime(600, now + 0.12);
+        gain.gain.setValueAtTime(0.08, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.12);
+        osc.start(now);
+        osc.stop(now + 0.13);
+      } else if (type === 'coin') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(987.77, now);
+        osc.frequency.setValueAtTime(1318.51, now + 0.08);
+        gain.gain.setValueAtTime(0.1, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+        osc.start(now);
+        osc.stop(now + 0.36);
+      } else if (type === 'click') {
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(440, now);
+        osc.frequency.exponentialRampToValueAtTime(220, now + 0.05);
+        gain.gain.setValueAtTime(0.05, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.05);
+        osc.start(now);
+        osc.stop(now + 0.06);
+      } else if (type === 'moo') {
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(160, now);
+        osc.frequency.exponentialRampToValueAtTime(115, now + 0.35);
+        gain.gain.setValueAtTime(0.12, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.36);
+        osc.start(now);
+        osc.stop(now + 0.38);
+      } else if (type === 'cluck') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(580, now);
+        osc.frequency.exponentialRampToValueAtTime(860, now + 0.08);
+        osc.frequency.setValueAtTime(650, now + 0.1);
+        osc.frequency.exponentialRampToValueAtTime(920, now + 0.18);
+        gain.gain.setValueAtTime(0.09, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.22);
+        osc.start(now);
+        osc.stop(now + 0.23);
+      } else if (type === 'bark') {
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(260, now);
+        osc.frequency.exponentialRampToValueAtTime(460, now + 0.07);
+        osc.frequency.setValueAtTime(310, now + 0.09);
+        osc.frequency.exponentialRampToValueAtTime(510, now + 0.16);
+        gain.gain.setValueAtTime(0.1, now);
+        gain.gain.linearRampToValueAtTime(0.01, now + 0.2);
+        osc.start(now);
+        osc.stop(now + 0.21);
+      }
+    }
+
+    // Attach retro sound triggers to all stage balls
+    const stageBalls = document.querySelectorAll('.product-ball');
+    stageBalls.forEach(ball => {
+      ball.addEventListener('mouseenter', () => playRetroSound('jump'));
+      ball.addEventListener('click', () => playRetroSound('coin'));
+    });
+
+    const cowEl = document.querySelector('.animal.cow');
+    if (cowEl) cowEl.addEventListener('click', () => playRetroSound('moo'));
+
+    const chickenEl = document.querySelector('.animal.chicken');
+    if (chickenEl) chickenEl.addEventListener('click', () => playRetroSound('cluck'));
+
+    const dogEl = document.querySelector('.animal.dog');
+    if (dogEl) dogEl.addEventListener('click', () => playRetroSound('bark'));
+
+    document.querySelectorAll('.house').forEach(house => {
+      house.addEventListener('click', () => {
+        playRetroSound('coin');
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 3. Motion Orchestration Engine (IntersectionObserver)
+    // --------------------------------------------------------------------------
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.15
+    };
+
+    const motionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all generic motion elements
+    document.querySelectorAll('[data-motion]').forEach(el => motionObserver.observe(el));
+
+    // Observe specific interactive sections
+    const mapSection = document.getElementById('mapa');
+    if (mapSection) {
+      const mapObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Trigger map SVG
+            const svgMap = mapSection.querySelector('.altamira-map');
+            if (svgMap) svgMap.classList.add('is-visible');
+
+            // Trigger stage balls in cascade
+            mapSection.querySelectorAll('.product-ball').forEach(ball => {
+              ball.classList.add('is-visible');
+            });
+
+            // Trigger wooden signs
+            mapSection.querySelectorAll('.map-label').forEach(label => {
+              label.classList.add('is-visible');
+            });
+
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      mapObserver.observe(mapSection);
+    }
+
+    // Observe Games Section Card
+    const gameCard = document.getElementById('gameCard');
+    if (gameCard) {
+      motionObserver.observe(gameCard);
+    }
+
+    // Observe Pulso Dev Outro Logo
+    const pulsoLogo = document.getElementById('pulsoLogo');
+    if (pulsoLogo) {
+      motionObserver.observe(pulsoLogo);
+    }
+
+    // Auto-launch Hero Scene in Asynchronous Layers on DOM Load
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        // Nav
+        const nav = document.querySelector('.nav');
+        if (nav) nav.classList.add('is-visible');
+
+        // Clouds & Sun
+        document.querySelectorAll('.cloud, .sun, .birds').forEach(el => el.classList.add('is-visible'));
+
+        // Town & Hills
+        const town = document.querySelector('.hero-town');
+        if (town) town.classList.add('is-visible');
+
+        // Animals
+        const fauna = document.querySelector('.hero-fauna');
+        if (fauna) fauna.classList.add('is-visible');
+
+        // Copy elements
+        document.querySelectorAll('.hero [data-motion]').forEach(el => el.classList.add('is-visible'));
+      }, 80);
+    });
+  </script>
+</body>
+</html>
