@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#73c7d4">
-  <title>PULSO — Soluções para nossa terrinha | Altamira–PA</title>
+  <title>PULSO — Soluções para nossa terra | Altamira–PA</title>
   <style>
     /* ==========================================================================
        PULSO — THEME TOKENS & BASE (Super Mario World x Cozy Farm Aesthetic)
@@ -1134,8 +1134,9 @@
       line-height: .95;
       margin: 14px 0 10px;
       font-weight: 1000;
-      color: var(--ink);
-      text-shadow: 4px 4px 0 #ffffff99;
+      color: #d62828;
+      -webkit-text-stroke: 2px #000000;
+      text-shadow: 4px 4px 0 #000000;
     }
 
     .map-title p {
@@ -1155,6 +1156,8 @@
       z-index: 1;
       pointer-events: none;
       opacity: 0;
+      /* Toned-down palette so the map reads as background, not the main focus */
+      filter: saturate(0.55) brightness(0.96);
       transition: opacity 1s ease 0.2s;
     }
 
@@ -1230,6 +1233,19 @@
       --accent: var(--purple);
       transform: translateY(-80px) scale(0.85) rotate(-10deg);
       transition-delay: 0.1s;
+    }
+
+    /* All five products share the same strong glow */
+    .product-ball.edu,
+    .product-ball.health,
+    .product-ball.community,
+    .product-ball.tourism,
+    .product-ball.food {
+      box-shadow:
+        inset 0 0 0 6px #ffffff,
+        inset 0 -12px 0 #e4d7b7,
+        0 0 34px 8px rgba(255, 212, 92, 0.35),
+        var(--shadow-hard-lg);
     }
 
     .product-ball.health {
@@ -1964,11 +1980,6 @@
     </a>
 
     <div class="nav-actions">
-      <!-- Retro Sound Toggle -->
-      <button class="sound-toggle" id="soundToggle" title="Ativar/desativar efeitos sonoros retrô" aria-label="Alternar som retrô">
-        <span id="soundIcon">🔈</span> <span id="soundLabel">Som</span>
-      </button>
-
       <div class="links" id="navLinks">
         <a href="#mapa">🗺️ Fases do Mapa</a>
         <a href="#jogos">🎮 Jogos & Simulação</a>
@@ -2090,16 +2101,11 @@
           <span class="kicker">✦ Feito em Altamira–Pará ✦</span>
         </div>
         <h1 data-motion="fade-up" style="--delay: 0.35s;">
-          Soluções para nossa <span class="glow-accent">terrinha</span> ✦✦✦
+          Soluções para nossa <span class="glow-accent">terra</span> ✦✦✦
         </h1>
         <p data-motion="fade-up" style="--delay: 0.45s;">
-          Iniciativas e tecnologias criadas no coração do Xingu para movimentar quem vive, planta, aprende e cuida da cidade.
+          Iniciativas criadas no coração do Xingu para movimentar quem vive, planta, aprende e cuida da cidade.
         </p>
-        
-        <div class="hero-actions" data-motion="fade-up" style="--delay: 0.55s;">
-          <a class="button" href="#mapa">Explorar Fases do Mapa ↓</a>
-          <a class="button light" href="#jogos">Testar Hexa Infinity ↗</a>
-        </div>
       </div>
 
       <!-- 5. Rural Countryside Landscape: Hills, Road, Farmhouses, Trees & Fence -->
@@ -2759,18 +2765,9 @@
          SECTION 2: OVERWORLD MAP — "NOSSO MAPA DE IDEIAS" (Sequential Stage Drops)
          ====================================================================== -->
     <section class="world" id="mapa">
-      <!-- HUD status bar (Drops in) -->
-      <div class="map-hud" data-motion="fade-down" style="--delay: 0.1s;">
-        <span class="live-dot"></span>
-        <span>Mundo 1 · Altamira & Xingu</span>
-        <span style="color:#ffffff77">|</span>
-        <span>★ 5 Fases Disponíveis</span>
-      </div>
-
       <div class="map-title" data-motion="fade-up" style="--delay: 0.2s;">
         <span class="kicker">Altamira vista do alto</span>
         <h2>Nosso mapa de ideias</h2>
-        <p>Um mapa afetivo e gamificado inspirado na cidade entre o Xingu, os igarapés, a Transamazônica e as pontes entre campo e floresta.</p>
       </div>
 
       <!-- Territorial Overworld SVG Canvas (Logical & Culturally Faithful Map of Altamira-PA) -->
@@ -3435,7 +3432,6 @@
       <!-- Asynchronous Level Nodes (Fase 1 -> 5) -->
       <!-- FASE 1 -->
       <article class="product-ball edu" tabindex="0" role="button" aria-label="Fase 1: Rede Acadêmica" data-stage="1">
-        <span class="stage-badge">★ FASE 01</span>
         <span class="stage-arrow">↗</span>
         <span class="category">Educação</span>
         <h3>Rede Acadêmica</h3>
@@ -3449,7 +3445,6 @@
 
       <!-- FASE 2 -->
       <article class="product-ball health" tabindex="0" role="button" aria-label="Fase 2: Guia de Saúde" data-stage="2">
-        <span class="stage-badge">★ FASE 02</span>
         <span class="stage-arrow">↗</span>
         <span class="category">Saúde</span>
         <h3>Guia de Saúde</h3>
@@ -3463,7 +3458,6 @@
 
       <!-- FASE 3 -->
       <article class="product-ball community" tabindex="0" role="button" aria-label="Fase 3: Lá na Brasília" data-stage="3">
-        <span class="stage-badge">★ FASE 03</span>
         <span class="stage-arrow">↗</span>
         <span class="category">Comunidade</span>
         <h3>Lá na Brasília</h3>
@@ -3477,7 +3471,6 @@
 
       <!-- FASE 4 -->
       <article class="product-ball tourism" tabindex="0" role="button" aria-label="Fase 4: Econexão" data-stage="4">
-        <span class="stage-badge">★ FASE 04</span>
         <span class="stage-arrow">↗</span>
         <span class="category">Turismo</span>
         <h3>Econexão</h3>
@@ -3491,7 +3484,6 @@
 
       <!-- FASE 5 -->
       <article class="product-ball food" tabindex="0" role="button" aria-label="Fase 5: Da Roça" data-stage="5">
-        <span class="stage-badge">★ FASE 05</span>
         <span class="stage-arrow">↗</span>
         <span class="category">Segurança Alimentar</span>
         <h3>Da Roça</h3>
@@ -3609,29 +3601,6 @@
     // --------------------------------------------------------------------------
     let audioCtx = null;
     let soundEnabled = false;
-
-    const soundToggle = document.getElementById('soundToggle');
-    const soundIcon = document.getElementById('soundIcon');
-    const soundLabel = document.getElementById('soundLabel');
-
-    soundToggle.addEventListener('click', () => {
-      if (!audioCtx) {
-        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-        audioCtx = new AudioContextClass();
-      }
-
-      soundEnabled = !soundEnabled;
-      if (soundEnabled) {
-        soundToggle.classList.add('active');
-        soundIcon.textContent = '🔊';
-        soundLabel.textContent = 'Som: ON';
-        playRetroSound('coin');
-      } else {
-        soundToggle.classList.remove('active');
-        soundIcon.textContent = '🔈';
-        soundLabel.textContent = 'Som: OFF';
-      }
-    });
 
     function playRetroSound(type) {
       if (!soundEnabled || !audioCtx) return;
